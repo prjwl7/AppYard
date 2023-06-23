@@ -98,7 +98,7 @@ const Landing = () => {
 
       {showContent && (
         <>
-          <div className="content1" style={{fontFamily:'Montserrat',fontWeight:600, fontSize:60,zIndex : 99999, backgroundColor:'transparent', width:'80%'}}>We launch your app fastly and affordable</div>
+          <div className="content1" style={{fontFamily:'Montserrat',fontWeight:500, fontSize:60,zIndex : 99999, backgroundColor:'transparent', width:'70%'}}>We launch your app fastly and affordable</div>
         </>
       )}
 
