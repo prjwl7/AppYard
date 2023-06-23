@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AppYard/static/css/main.2346d448.css",
-    "main.js": "/AppYard/static/js/main.b52e31c0.js",
+    "main.css": "/AppYard/static/css/main.d823a761.css",
+    "main.js": "/AppYard/static/js/main.b5ee3a52.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
     "index.html": "/AppYard/index.html",
-    "main.2346d448.css.map": "/AppYard/static/css/main.2346d448.css.map",
-    "main.b52e31c0.js.map": "/AppYard/static/js/main.b52e31c0.js.map",
+    "main.d823a761.css.map": "/AppYard/static/css/main.d823a761.css.map",
+    "main.b5ee3a52.js.map": "/AppYard/static/js/main.b5ee3a52.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2346d448.css",
-    "static/js/main.b52e31c0.js"
+    "static/css/main.d823a761.css",
+    "static/js/main.b5ee3a52.js"
   ]
 }
