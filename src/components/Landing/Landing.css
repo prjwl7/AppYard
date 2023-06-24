@@ -90,15 +90,15 @@ body{
   
   .leftDiv {
     position: absolute;
-    top: 20%;
-    right: 40%;
+    top: 18%;
+    left: 35%;
     height: 60%;
     width: 30%;
     border-radius: 50%;
     background-color: #446E83;
     opacity: 0;
-    animation-delay: 3s;
-    animation: moveLeft 4s ease-in-out;
+    animation-delay: 4s;
+    animation: moveLeft 6s ease-in-out;
     animation-fill-mode: forwards;
   }
   
@@ -107,28 +107,44 @@ body{
       transform: translateX(0);
       opacity: 1;
     }
-    30% {
-        transform: translateX(0);
+
+    30%{
+      transform: translate(20%, 10%);
+
+      opacity: 1;
+    }
+    50% {
+        transform: translate(15%, 10%);
         opacity: 1;
     }   
 
+    80%{
+      transform: translate(150%, 10%);
+      opacity: 1;
+    }
+
+    90%{
+      transform: translate(120%, 10%);
+      opacity: 1;
+    }
+
     100% {
-      transform: translateX(-200%);
+      transform: translate(200%, 10%);
       opacity: 0;
     }
   }
   
   .rightDiv {
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 18%;
+    right: 35%;
     height: 60%;
     width: 30%;
     border-radius: 50%;
     background-color: #446E83;
     opacity: 0;
-    animation-delay: 3s;
-    animation: moveRight 4s ease-in-out ;
+    animation-delay: 4s;
+    animation: moveRight 6s ease-in-out ;
     animation-fill-mode: forwards;
   }
   
@@ -138,12 +154,28 @@ body{
       opacity: 1;
     }
 
-    30% {
-        transform: translateX(0);
-        opacity: 1;
+    30%{
+      transform: translate(-20%, 10%);
+
+      opacity: 1;
     }
+    50% {
+        transform: translate(-15%, 10%);
+        opacity: 1;
+    }   
+
+    80%{
+      transform: translate(-150%, 10%);
+      opacity: 1;
+    }
+
+    90%{
+      transform: translate(-120%, 10%);
+      opacity: 1;
+    }
+
     100% {
-      transform: translateX(200%);
+      transform: translate(-200%, 10%);
       opacity: 0;
     }
   }
@@ -160,7 +192,7 @@ body{
     position: absolute;
     top: 37%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle1 3s ease-in-out ;
   }
 
@@ -185,7 +217,7 @@ body{
     left: 40%;
     top: 30%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle2 3s ease-in-out;
   }
 
@@ -215,7 +247,7 @@ body{
     left: 37%;
     top: 24%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle3 3s ease-in-out ;
   }
 
@@ -260,7 +292,7 @@ body{
     left: 30%;
     top: 10%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle5 3s ease-in-out;
   }
 
@@ -289,7 +321,7 @@ body{
     left: 27%;
     top: 4%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle6 3s ease-in-out;
   }
 
@@ -346,7 +378,7 @@ body{
     left: 8%;
     top: -22%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: moveCircle8 3s ease-in-out;
   }
 
@@ -376,7 +408,7 @@ body{
     left: 1%;
     top: -33%;
     background-color: transparent;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation: rotateCircle9 4s ease-in-out;
   }
 

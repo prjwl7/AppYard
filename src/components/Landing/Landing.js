@@ -41,19 +41,19 @@ const Landing = () => {
     
     const timeout7 = setTimeout(() => {
       setWeContent('');
-    }, 4700);
+    }, 7000);
 
     const timeout8 = setTimeout(() => {
       setShowCircles(true);
-    },7000);
+    },10000);
    
     const timeout9 = setTimeout(() => {
       setShowContent(true);
-    },9000);
+    },12000);
     
     const timeout10 = setTimeout(() => {
       setShowplusHundred(true);
-    },10000);
+    },13000);
 
 
 
