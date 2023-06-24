@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/AppYard/static/css/main.d823a761.css",
-    "main.js": "/AppYard/static/js/main.b5ee3a52.js",
+    "main.css": "/AppYard/static/css/main.ad954a1f.css",
+    "main.js": "/AppYard/static/js/main.30681b44.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
+    "static/media/MobileImage.png": "/AppYard/static/media/MobileImage.87f7baa817f923d55568.png",
     "index.html": "/AppYard/index.html",
-    "main.d823a761.css.map": "/AppYard/static/css/main.d823a761.css.map",
-    "main.b5ee3a52.js.map": "/AppYard/static/js/main.b5ee3a52.js.map",
+    "main.ad954a1f.css.map": "/AppYard/static/css/main.ad954a1f.css.map",
+    "main.30681b44.js.map": "/AppYard/static/js/main.30681b44.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d823a761.css",
-    "static/js/main.b5ee3a52.js"
+    "static/css/main.ad954a1f.css",
+    "static/js/main.30681b44.js"
   ]
 }
