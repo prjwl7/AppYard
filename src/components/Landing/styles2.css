@@ -1,0 +1,274 @@
+@media screen and (min-width: 1980px) {
+    .circle1{
+      height: 30%;
+      width: 22%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      left: 43%;
+      opacity: 1;
+      z-index: 9999;
+      position: absolute;
+      top: 28%;
+      left: 39%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle1 3s ease-in-out ;
+    }
+
+    .circle2{
+      height: 40%;
+      width: 30%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      left: 35.5%;
+      top: 23%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle2 3s ease-in-out;
+    }
+
+    @keyframes moveCircle2 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 80%;
+  
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 35.5%;
+      }
+    }
+
+    
+    .circle3{
+      height: 50%;
+      width: 37%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 900;
+      position: absolute;
+      left: 32%;
+      top: 18%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle3 3s ease-in-out ;
+    }
+
+    @keyframes moveCircle3 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 55%;
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 32%;
+  
+      }
+    }
+
+    .circle4{
+      height: 60%;
+      width: 45%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      position: absolute;
+      z-index: 800;
+      position: absolute;
+      left: 28%;
+      top: 13%;
+      background-color: transparent;
+    }
+
+    .circle5{
+      height: 80%;
+      width: 60%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 700;
+      position: absolute;
+      left: 21%;
+      top: 3%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle5 3s ease-in-out;
+    }
+
+
+    @keyframes moveCircle5 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 15%;
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 21%;
+      }
+    }
+
+    .circle6{
+      height: 100%;
+      width: 70%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 600;
+      position: absolute;
+      left: 16%;
+      top: -7%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle6 3s ease-in-out;
+    }
+  
+
+    @keyframes moveCircle6 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 18%;
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 16%;
+      }
+    }
+
+    .circle7{
+      height: 120%;
+      width: 80%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 500;
+      position: absolute;
+      left: 11%;
+      top: -17%;
+      background-color: transparent;
+    }
+
+    @keyframes moveCircle7 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 23%;
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 11%;
+      }
+    }
+
+    .circle8{
+      height: 130%;
+      width: 90%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 400;
+      position: absolute;
+      left: 6%;
+      top: -22%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: moveCircle8 3s ease-in-out;
+    }
+
+
+    @keyframes moveCircle8 {
+      0% {
+          opacity: 0.1;
+          position: absolute;
+          left: 3%;
+      }
+      100% {
+          opacity: 1;
+          position: absolute;
+          left: 6%;
+      }
+    }
+
+    .circle9{
+      height: 150%;
+      width: 100%;
+      border-radius: 50%;
+      border: 10px solid #446E83;
+      background-color: #121212;
+      opacity: 1;
+      z-index: 100;
+      position: absolute;
+      left: 1%;
+      top: -33%;
+      background-color: transparent;
+      animation-delay: 15s;
+      animation: rotateCircle9 4s ease-in-out;
+    }
+
+
+    .content1{
+      position: relative;
+      font-size: 80px !important;
+      left: 5%;
+      top: -12%;
+      opacity: 1;
+      animation: moveContent1 2s ease-in-out;
+    }
+
+    .plushundred{
+      opacity: 1;
+      z-index: 99999;
+      position: absolute;
+      background-color: transparent;
+      font-size: 40px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0%;
+      margin-left: 0%;
+      align-items: center;
+      gap: 40px;
+      animation: opacityPlusHundred 2s ease-in-out;
+    }
+
+    .getWebsite{
+      border-style: none;
+      border-radius: 5%;
+      height: 70px;
+      width: 200px;
+      background-color: #446E83;
+      color: white;
+      cursor: pointer;
+    }
+
+    
+  @keyframes moveContent1 {
+    0%{
+        top:40%
+    }
+
+    100%{
+        top: -12%;
+    }
+  }
+  
+  } 

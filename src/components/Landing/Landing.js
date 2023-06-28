@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Landing.css';
+import './styles2.css'
 
 const Landing = () => {
   const [isWeVisible, setIsWeVisible] = useState(true);
@@ -45,7 +46,7 @@ const Landing = () => {
 
     const timeout8 = setTimeout(() => {
       setShowCircles(true);
-    },10000);
+    },9000);
    
     const timeout9 = setTimeout(() => {
       setShowContent(true);

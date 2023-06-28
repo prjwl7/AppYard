@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.mobileContainer{
+.DigitalContainer{
     position: absolute;
-    top: 11.3%;
+    top: 200%;
     background-color: #ED5858;
     height: 100%;
     width: 100%;
@@ -34,7 +34,7 @@
   
   .mobile-content::before {
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -84,13 +84,8 @@
     width: 180px;
     height: 40px;
     margin: 20px;
-    z-index: 99999;
-
   }
 
-  .mobile-knowMore:hover{
-    cursor: pointer;
-  }
 
   .stars-grid{
     display: grid;
