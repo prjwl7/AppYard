@@ -1,0 +1,22 @@
+.HowWorkContainer{
+    background-color: #F3B820;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 9.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    color: #484848;
+    padding-top: 2%;
+}
+
+.howWorks-knowMore{
+    width: 230px;
+    height: 58px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    background-color: #65B0D6;
+}

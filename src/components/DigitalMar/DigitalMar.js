@@ -1,6 +1,8 @@
 import React from 'react'
 import './DigitalMar.css'
-import starImage3 from '../assests/starImage3.png'
+import adwords from '../assests/adwords 2.png'
+import linkedin from '../assests/linkedin 2.png'
+import seo from '../assests/seo 2.png'
 import DigiImage from '../assests/digimar.png'
 const DigitalMar = () => {
   return (
@@ -11,23 +13,20 @@ const DigitalMar = () => {
             </div>
             <div className="mobile-content">
                 <div className='mobile-content-1'>Digital Marketing</div>
-                <div className='mobile-content-2'>To boost your company expansion</div>
+                <div className='mobile-content-2'>Gain more visibility and boost your success</div>
                 <div className='mobile-content-3'>
                     <ul>
-                        <li>We provide services ranging from design to development and maintenance</li>
-                        <li>Our team of experts help you build an MVP or full fledged app that meets your requirement</li>
+                        <li>We empower your business to captivate audiences, convert customers, and achieve digital excellence</li>
+                        <li>Take the leap with Appyard and conquer the digital landscape today ! Be it Google Ads, Meta Ads, LinkedIn Ads or SEO</li>
                     </ul>
                 </div>
                 <div>
                     <button className='mobile-knowMore'>Know more</button>
                 </div>
             </div>
-            <div className="stars-grid">
-            <div className='div-star1'><img src={starImage3} alt=""  className='star1'/></div>
-            <div className='div-star2'><img src={starImage3} alt="" className='star2'/></div>
-            <div className='div-star3'><img src={starImage3} alt="" className='star3'/></div>
-            </div>
-            <div className='div-star4'><img src={starImage3} alt="" className="star4"/></div>
+            <div className='div-adwords'><img src={adwords} alt=""  className='star1'/></div>
+            <div className='div-linkedin'><img src={linkedin} alt="" className='star2'/></div>
+            <div className='div-seo'><img src={seo} alt="" className="star4"/></div>
         </div>
     </>
   )

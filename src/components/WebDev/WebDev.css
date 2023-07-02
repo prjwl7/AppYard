@@ -2,8 +2,8 @@
 
 .webContainer{
     position: absolute;
-    top: 100%;
-    background-color: #ED5858;
+    top: 9%;
+    background-color: #5CA2A0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -85,61 +85,27 @@
     margin: 20px;
   }
 
-
-  .stars-grid{
-    display: grid;
+  .div-html{
     position: absolute;
+    left: 9.8%;
     bottom: 20%;
-    left: 7%;
-    
-  }
-  .star1{
-    height: 30px;
-    width: 30px;
-  }
-
-  .star2{
-    height: 80px;
-    width: 80px;
-  }
-
-  .star3{
-    height: 40px;
-    width: 40px;
-  }
-
-  .div-star1{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    left: 20%;
-  }
-  .div-star2{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    top: 50%;
-    right: 10%;
-  }
-
-  .div-star3{
-    display: grid;
-    grid-column: 2;
-    grid-row: 3;
-    position: relative;
-    top: 70%;
-  }
-
-  .div-star4{
+   }
+ 
+  .div-css{
     position: absolute;
-    top: 73%;
-    right: 16%;
-    z-index: 1;
-  }
+    left: 17%;
+    bottom: 10%;
+   }
+ 
+ 
+   .div-react{
+     position: absolute;
+     top: 67%;
+     right: 21%;
+     z-index: 999;
+   }
 
-
+  
 
 
   ul {

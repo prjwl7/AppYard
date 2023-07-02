@@ -2,7 +2,9 @@ import React from 'react'
 import './WebDev.css'
 
 import manWebsite from '../assests/man-website.png'
-import star2 from '../assests/starImage2.png'
+import Reactimg from '../assests/react 1.png'
+import cssimg from '../assests/css 1.png'
+import htmlimg from '../assests/html-5 1.png'
 const WebDev = () => {
   return (
     <div className="webContainer">
@@ -22,12 +24,9 @@ const WebDev = () => {
                     <button className='mobile-knowMore'>Know more</button>
                 </div>
             </div>
-            <div className="stars-grid">
-            <div className='div-star1'><img src={star2} alt=""  className='star1'/></div>
-            <div className='div-star2'><img src={star2} alt="" className='star2'/></div>
-            <div className='div-star3'><img src={star2} alt="" className='star3'/></div>
-            </div>
-            <div className='div-star4'><img src={star2} alt="" className="star4"/></div>
+            <div className='div-html'><img src={htmlimg} alt=""  className='star1'/></div>
+            <div className='div-css'><img src={cssimg} alt="" className='star2'/></div>
+            <div className='div-react'><img src={Reactimg} alt="" className='star3'/></div>
         </div>
   )
 }

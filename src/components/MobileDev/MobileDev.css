@@ -2,8 +2,8 @@
 
 .mobileContainer{
     position: absolute;
-    top: 11.3%;
-    background-color: #ED5858;
+    top: 9%;
+    background-color: #E77E9F;
     height: 100%;
     width: 100%;
     display: flex;
@@ -92,56 +92,20 @@
     cursor: pointer;
   }
 
-  .stars-grid{
-    display: grid;
-    position: absolute;
-    bottom: 20%;
-    left: 7%;
-    
-  }
-  .star1{
-    height: 30px;
-    width: 30px;
-  }
+ 
 
-  .star2{
-    height: 80px;
-    width: 80px;
-  }
-
-  .star3{
-    height: 40px;
-    width: 40px;
-  }
 
   .div-star1{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    left: 20%;
-  }
-  .div-star2{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    top: 50%;
-    right: 10%;
+   position: absolute;
+   left: 5.5%;
+   bottom: 8%;
   }
 
-  .div-star3{
-    display: grid;
-    grid-column: 2;
-    grid-row: 3;
-    position: relative;
-    top: 70%;
-  }
 
   .div-star4{
     position: absolute;
-    top: 73%;
-    right: 16%;
+    top: 67%;
+    right: 22%;
     z-index: 999;
   }
 

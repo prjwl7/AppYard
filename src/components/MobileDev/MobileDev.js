@@ -1,6 +1,7 @@
 import React from 'react'
 import './MobileDev.css'
-import starImage from '../assests/starImage.png'
+import apple from '../assests/apple 1.png'
+import android from '../assests/android os.png'
 import mobileImage from '../assests/MobileImage.png'
 const MobileDev = () => {
   return (
@@ -22,12 +23,8 @@ const MobileDev = () => {
                     <button className='mobile-knowMore'>Know more</button>
                 </div>
             </div>
-            <div className="stars-grid">
-            <div className='div-star1'><img src={starImage} alt=""  className='star1'/></div>
-            <div className='div-star2'><img src={starImage} alt="" className='star2'/></div>
-            <div className='div-star3'><img src={starImage} alt="" className='star3'/></div>
-            </div>
-            <div className='div-star4'><img src={starImage} alt="" className="star4"/></div>
+            <div className='div-star1'><img src={android} alt=""  className='star1'/></div>
+            <div className='div-star4'><img src={apple} alt="" className="star4"/></div>
         </div>
     </>
   )

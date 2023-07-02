@@ -982,7 +982,7 @@ body{
     .content1{
       position: relative;
       font-size: 34px !important;
-      left: 8%;
+      left: 16%;
       top: -15%;
       opacity: 1;
       animation: moveContent1 2s ease-in-out;
@@ -1006,8 +1006,8 @@ body{
     .getWebsite{
       border-style: none;
       border-radius: 5%;
-      height: 10%;
-      width: 25%;
+      height: 40px;
+      width: 35%;
       background-color: #446E83;
       color: white;
       cursor: pointer;

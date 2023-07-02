@@ -1,0 +1,47 @@
+.scroll-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #ffffff;
+}
+
+.scroll-content {
+  padding-right: 8px; /* Add padding to prevent content from overlapping scrollbar */
+}
+
+.component {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.component.active {
+  opacity: 1;
+}
+
+/* Webkit scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5%;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: black;
+  
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}

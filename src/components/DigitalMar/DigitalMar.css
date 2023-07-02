@@ -2,8 +2,8 @@
 
 .DigitalContainer{
     position: absolute;
-    top: 200%;
-    background-color: #ED5858;
+    top: 9%;
+    background-color: #3CA3BB;
     height: 100%;
     width: 100%;
     display: flex;
@@ -77,7 +77,7 @@
   }
 
   .mobile-knowMore{
-    background-color:#446E83;
+    background-color:#3fb1ea;
     color: white;
     border-radius: 10px;
     border-style: none;
@@ -87,58 +87,28 @@
   }
 
 
-  .stars-grid{
-    display: grid;
+
+  
+  .div-adwords{
     position: absolute;
+    left: 5.5%;
     bottom: 20%;
-    left: 7%;
-    
-  }
-  .star1{
-    height: 30px;
-    width: 30px;
-  }
-
-  .star2{
-    height: 80px;
-    width: 80px;
-  }
-
-  .star3{
-    height: 40px;
-    width: 40px;
-  }
-
-  .div-star1{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    left: 20%;
-  }
-  .div-star2{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    top: 50%;
-    right: 10%;
-  }
-
-  .div-star3{
-    display: grid;
-    grid-column: 2;
-    grid-row: 3;
-    position: relative;
-    top: 70%;
-  }
-
-  .div-star4{
+   }
+   
+     
+  .div-linkedin{
     position: absolute;
-    top: 73%;
-    right: 16%;
-    z-index: 999;
-  }
+    left: 11%;
+    bottom: 8%;
+   }
+ 
+ 
+   .div-seo{
+     position: absolute;
+     top: 62%;
+     right: 22%;
+     z-index: 999;
+   }
 
 
 

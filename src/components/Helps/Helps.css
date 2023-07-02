@@ -1,0 +1,45 @@
+.helpContainer{
+    background-color: #5D73C2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 9.3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.help1{
+    position: relative;
+    top: -10%;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.help2{
+    font-size: 300px;
+    font-weight: 800;
+}
+
+.help3{
+    font-size: 48px;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+}
+
+.wardMoney{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+}
+
+.cryptoImage{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}

@@ -2,6 +2,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 100;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .navbar-permanent{
@@ -9,12 +11,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12%;
+    gap: 8%;
     padding: 1%;
     height: 50px;
     width: 100%;
     padding-right: 4%;
-    position: fixed !important;
+    position: absolute !important;
     top: 0;
     left: 0;
 }
@@ -22,19 +24,19 @@
 .navbar-logo{
     margin-left: 4%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .navbar-buttons{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     opacity: 0;
 }
 
 .navbar-buttons button{
-    background-color: #121212;
+    background-color: transparent;
     color: white;
-    width: 131px;
+    width: 15em;
     border-style: none;
     font-size: 17px;
 }
@@ -48,6 +50,7 @@
 .phonepng{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 .line{
     height: 40px;
@@ -63,4 +66,10 @@
 }
 button:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width : 1700px) {
+    .quote{
+        opacity: 0;
+    }
 }
