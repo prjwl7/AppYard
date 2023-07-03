@@ -1,30 +1,37 @@
 {
   "files": {
-    "main.css": "/AppYard/static/css/main.0c0734b6.css",
-    "main.js": "/AppYard/static/js/main.07f4a23d.js",
+    "main.css": "/AppYard/static/css/main.df994dc3.css",
+    "main.js": "/AppYard/static/js/main.e8acaf86.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
+    "static/media/rocket (1).png": "/AppYard/static/media/rocket (1).6fd9e3d9673fe03aeb54.png",
     "static/media/man-website.png": "/AppYard/static/media/man-website.10afed9469c7838e4c19.png",
     "static/media/digimar.png": "/AppYard/static/media/digimar.642bc8f6212e4a1f421a.png",
     "static/media/MobileImage.png": "/AppYard/static/media/MobileImage.87f7baa817f923d55568.png",
     "static/media/rocket.png": "/AppYard/static/media/rocket.3de7ae5d3678038a95a3.png",
     "static/media/Wad of money.png": "/AppYard/static/media/Wad of money.688622a0a9fd70621bfb.png",
+    "static/media/works4.png": "/AppYard/static/media/works4.04ff7982e58ae6c22f74.png",
+    "static/media/works0.png": "/AppYard/static/media/works0.0cbf7eefd8f0fbc996a7.png",
     "static/media/cryptocurrency market growth.png": "/AppYard/static/media/cryptocurrency market growth.a7419540c2717bdc5d87.png",
     "static/media/amico.png": "/AppYard/static/media/amico.d6d6b7f697e8da99929c.png",
+    "static/media/cuate.png": "/AppYard/static/media/cuate.0bdbcd8eab52a9f13b24.png",
+    "static/media/works3.png": "/AppYard/static/media/works3.34eaca2b31cc40fe9481.png",
     "static/media/seo 2.png": "/AppYard/static/media/seo 2.282b9f40755173ec81b5.png",
     "static/media/black wallet with money.png": "/AppYard/static/media/black wallet with money.1dda17a6d0c0dc4611f7.png",
     "static/media/tool box.png": "/AppYard/static/media/tool box.2685f863eddbf8573ec0.png",
     "static/media/android os.png": "/AppYard/static/media/android os.9fbcb92e23b9fdb843f5.png",
+    "static/media/works5.png": "/AppYard/static/media/works5.e7782d769c3660394b7e.png",
     "static/media/time.png": "/AppYard/static/media/time.9c46b8eef532a6816166.png",
+    "static/media/rafiki.png": "/AppYard/static/media/rafiki.4a861c247dbd3599be76.png",
     "static/media/react 1.png": "/AppYard/static/media/react 1.43b372a4f68edf79363c.png",
     "static/media/question-mark 1.png": "/AppYard/static/media/question-mark 1.6504afb677c1fb5cea3b.png",
     "static/media/ShortAppYard.png": "/AppYard/static/media/ShortAppYard.3abd624d5352eac34a68.png",
     "index.html": "/AppYard/index.html",
-    "main.0c0734b6.css.map": "/AppYard/static/css/main.0c0734b6.css.map",
-    "main.07f4a23d.js.map": "/AppYard/static/js/main.07f4a23d.js.map",
+    "main.df994dc3.css.map": "/AppYard/static/css/main.df994dc3.css.map",
+    "main.e8acaf86.js.map": "/AppYard/static/js/main.e8acaf86.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0734b6.css",
-    "static/js/main.07f4a23d.js"
+    "static/css/main.df994dc3.css",
+    "static/js/main.e8acaf86.js"
   ]
 }
