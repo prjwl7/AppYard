@@ -11,12 +11,16 @@ import HowWorks from './components/HowWorks/HowWorks';
 import GetInTouch from './components/GetInTouch/GetInTouch';
 import MobileDev2 from './components/MobileDev/MobileDev2';
 import MobileDev3 from './components/MobileDev/MobileDev3';
+import HowWorks2 from './components/HowWorks/HowWorks2';
+import Scrollbar2 from './components/Scollbar2/Scrollbar2';
 function App() {
   const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
+  const components1 = [<MobileDev/>, <WebDev/>, <DigitalMar/>, <Helps/>, <WhyChooseUs/>, <HowWorks/>, <GetInTouch/>]
   return (
     <>
     <Navbar></Navbar>
-   <ScrollBar components={components}></ScrollBar>
+    <HowWorks2></HowWorks2>
+        
     </>
   );
 }

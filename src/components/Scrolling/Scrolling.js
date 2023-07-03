@@ -12,18 +12,29 @@ const ScrollBar = ({ components }) => {
       if (scrollContainer) {
         const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
         const maxScrollTop = scrollHeight - clientHeight;
-        const progress = scrollTop / maxScrollTop;
-        const newIndex = Math.floor(progress * components.length);
-        setCurrentIndex(newIndex);
+        const threshold = maxScrollTop * 0.935666; // Adjust the threshold as needed (90% in this example)
+
+        if (scrollTop >= threshold) {
+          // Reset the scrollbar position to the top and update the component index
+          scrollContainer.scrollTop = 0;
+          setCurrentIndex((prevIndex) => getNextIndex(prevIndex));
+        }
+
         setScrollPosition(scrollTop);
       }
     };
 
+    const getNextIndex = (currentIndex) => {
+      // Calculate the next index based on the defined order
+      const nextIndex = currentIndex + 1;
+      return nextIndex >= components.length ? 0 : nextIndex;
+    };
+
     const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
-      scrollContainer.addEventListener('scroll', handleScroll);
+      scrollContainer.addEventListener('wheel', handleScroll);
       return () => {
-        scrollContainer.removeEventListener('scroll', handleScroll);
+        scrollContainer.removeEventListener('wheel', handleScroll);
       };
     }
   }, [components]);
@@ -33,7 +44,8 @@ const ScrollBar = ({ components }) => {
   }
 
   return (
-    <div className="scroll-container" ref={scrollContainerRef}>
+   <>
+       <div className="scroll-container" ref={scrollContainerRef}>
       <div className="scroll-content">
         {components.map((Component, index) => (
           <div key={index} className={`component ${index === currentIndex ? 'active' : ''}`}>
@@ -42,6 +54,7 @@ const ScrollBar = ({ components }) => {
         ))}
       </div>
     </div>
+   </>
   );
 };
 

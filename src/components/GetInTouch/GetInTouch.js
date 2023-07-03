@@ -23,11 +23,11 @@ const GetInTouch = () => {
                 <div className="connect">
                     <div style={{fontSize:24, fontWeight:600}}>Lets connect</div>
                     <div style={{ display:'flex', flexDirection:'column', gap:10}}>
-                    <label for="name">Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label htmlFor="name">Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" id='name' placeholder='&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Enter your name' name='Name'/>
                     </div>
                     <div style={{ display:'flex', flexDirection:'column', gap:10}}>
-                    <label for="idees"> Mail ID or Phone Number </label>
+                    <label htmlFor="idees"> Mail ID or Phone Number </label>
                     <input type="text" id='idees' placeholder='&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Enter your mail ID or Phone number' name='idees'/>
                     </div>
                     <div className="Send"><button className='sendButton'>Send</button></div>

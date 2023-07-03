@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
+.app-container {
+  position: relative;
+  width: 100%; /* Set the desired width */
+  height: 100%; /* Set the desired height */
+  margin: 0 auto;
+  overflow: scroll; /* Center the container on the screen */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-scrollbar-container {
+  position: absolute;
+  top: 50px; /* Set the desired top position */
+  left: 50px; /* Set the desired left position */
+  width: calc(100% - 100px); /* Set the desired width based on container size */
+  height: calc(100% - 50px); /* Set the desired height based on container size */
 }
