@@ -44,8 +44,7 @@ const ScrollBar = ({ components }) => {
   }
 
   return (
-   <>
-       <div className="scroll-container" ref={scrollContainerRef}>
+    <div className="scroll-container" ref={scrollContainerRef}>
       <div className="scroll-content">
         {components.map((Component, index) => (
           <div key={index} className={`component ${index === currentIndex ? 'active' : ''}`}>
@@ -54,7 +53,6 @@ const ScrollBar = ({ components }) => {
         ))}
       </div>
     </div>
-   </>
   );
 };
 

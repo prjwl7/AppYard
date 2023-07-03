@@ -19,7 +19,8 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <HowWorks2></HowWorks2>
+    <ScrollBar components={components}>
+    </ScrollBar>
         
     </>
   );
