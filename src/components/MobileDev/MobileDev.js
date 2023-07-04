@@ -3,7 +3,14 @@ import './MobileDev.css'
 import apple from '../assests/apple 1.png'
 import android from '../assests/android os.png'
 import mobileImage from '../assests/MobileImage.png'
+
+import { useNavigate } from 'react-router-dom'
 const MobileDev = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/scrollbarMobileDev');
+      };
   return (
     <>
         <div className="mobileContainer">
@@ -20,7 +27,7 @@ const MobileDev = () => {
                     </ul>
                 </div>
                 <div>
-                    <button className='mobile-knowMore'>Know more</button>
+                    <button className='mobile-knowMore' onClick={handleButtonClick}>Know more</button>
                 </div>
             </div>
             <div className='div-star1'><img src={android} alt=""  className='star1'/></div>

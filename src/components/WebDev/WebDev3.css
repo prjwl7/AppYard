@@ -1,4 +1,4 @@
-.MobileDev3Container{
+.WebDev3Container{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -12,12 +12,12 @@
     justify-content: center;
 }
 
-.stackTech{
+.stackTechWeb{
     display: flex;
     gap: 20px;
 }
 
-.stackTech div{
+.stackTechWeb div{
     display: flex;
     background: linear-gradient(0deg, rgba(44, 42, 42, 0.22), rgba(44, 42, 42, 0.22));
     border: 1px solid rgba(44, 42, 42, 0.34);
@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-.stackTech div img{
+.stackTechWeb div img{
     height: 180px;
     width: 130px;
 }
@@ -41,4 +41,9 @@
     font-size: 60px;
     font-weight: 1000;
     gap: 10px;
+}
+
+.nodeImage{
+    height: 200px !important;
+    width: 250px !important;
 }
