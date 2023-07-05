@@ -34,11 +34,12 @@ function App() {
   return (
     
      <>
+         <HashRouter basename='/'>
          <Navbar></Navbar>
     <Routes>
-      <Route path="/" element = {<MobileDev/>} />
-      <Route path="/WebDev" element = {<WebDev/>} />
-      <Route path="/DigitalMar" element = {<DigitalMar/>} />
+      <Route path="/AppYard" element = {<MobileDev/>} />
+      <Route path="/AppYard/WebDev" element = {<WebDev/>} />
+      <Route path="/AppYard/DigitalMar" element = {<DigitalMar/>} />
       <Route
         path="/scrollbar" element = {<ScrollBar components={components} />}
       />
@@ -49,6 +50,8 @@ function App() {
         path="/scrollbarWebDev" element = {<ScrollBar components={componentsWebDev} />}
       />
     </Routes>
+
+         </HashRouter>
      </>
   );
 }
