@@ -33,7 +33,7 @@ function App() {
   return (
     
      <>
-         <HashRouter basename='/'>
+         <Router>
          <Navbar></Navbar>
     <Routes>
       <Route path='/AppYard' >
@@ -52,7 +52,7 @@ function App() {
       />
     </Routes>
 
-         </HashRouter>
+         </Router>
      </>
   );
 }
