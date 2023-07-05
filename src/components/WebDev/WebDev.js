@@ -5,7 +5,16 @@ import manWebsite from '../assests/man-website.png'
 import Reactimg from '../assests/react 1.png'
 import cssimg from '../assests/css 1.png'
 import htmlimg from '../assests/html-5 1.png'
+
+import { useNavigate } from 'react-router-dom'
+
 const WebDev = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/scrollbarWebDev');
+      };
+
   return (
     <div className="webContainer">
             <div className="mobile-image">
@@ -21,7 +30,7 @@ const WebDev = () => {
                     </ul>
                 </div>
                 <div>
-                    <button className='mobile-knowMore'>Know more</button>
+                    <button className='mobile-knowMore' onClick={handleButtonClick} >Know more</button>
                 </div>
             </div>
             <div className='div-html'><img src={htmlimg} alt=""  className='star1'/></div>

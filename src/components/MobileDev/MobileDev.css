@@ -19,7 +19,6 @@
     height: 65vh;
     width: 40vw;
     border-radius: 10px;
-    z-index: 2;
     padding: 2%;
     top: -3%;
     left: 3%;
@@ -27,23 +26,11 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-right: 10%;
-    backdrop-filter: blur(200px);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+
 
   }
   
-  .mobile-content::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(225, 219, 219) ;
-    filter: blur(10px);
-    opacity: 0.3; 
-    z-index: 2;
-  }
   
   .mobile-image{
     position: relative;

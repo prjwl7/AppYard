@@ -35,6 +35,8 @@ function App() {
       <Navbar></Navbar>
     <Routes>
       <Route path="/" element = {<MobileDev/>} />
+      <Route path="/WebDev" element = {<WebDev/>} />
+      <Route path="/DigitalMar" element = {<DigitalMar/>} />
       <Route
         path="/scrollbar" element = {<ScrollBar components={components} />}
       />
