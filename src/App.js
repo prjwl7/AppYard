@@ -22,7 +22,7 @@ import WebDev4 from './components/WebDev/WebDev4';
 import WebDev5 from './components/WebDev/WebDev5';
 
 //Libraries
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route , HashRouter} from 'react-router-dom';
 
 function App() {
   const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
@@ -31,7 +31,7 @@ function App() {
 
   return (
     
-    <Router>
+    <HashRouter basename='/'>
       <Navbar></Navbar>
     <Routes>
       <Route path="/" element = {<MobileDev/>} />
@@ -47,7 +47,7 @@ function App() {
         path="/scrollbarWebDev" element = {<ScrollBar components={componentsWebDev} />}
       />
     </Routes>
-  </Router>
+  </HashRouter>
   );
 }
 
