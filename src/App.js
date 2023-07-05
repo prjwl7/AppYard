@@ -23,6 +23,8 @@ import WebDev5 from './components/WebDev/WebDev5';
 
 //Libraries
 import { BrowserRouter as Router, Routes, Route , HashRouter} from 'react-router-dom';
+import 'zone.js';
+
 
 function App() {
   const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
