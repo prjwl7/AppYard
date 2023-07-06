@@ -28,7 +28,7 @@ import 'zone.js';
 
 
 function App() {
-  const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
+  const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch, GetAQuote];
   const componentsWebDev = [WebDev2, WebDev3, WebDev4, WebDev5];
   const componentsMobileDev = [MobileDev2, MobileDev3, MobileDev4, MobileDev5];
 
