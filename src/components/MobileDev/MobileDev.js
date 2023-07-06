@@ -3,11 +3,17 @@ import './MobileDev.css'
 import apple from '../assests/apple 1.png'
 import android from '../assests/android os.png'
 import mobileImage from '../assests/MobileImage.png'
-
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import ScrollBar from '../Scrolling/Scrolling'
+import WebDev from '../WebDev/WebDev'
+import DigitalMar from '../DigitalMar/DigitalMar'
+import Helps from '../Helps/Helps'
+import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
+import HowWorks from '../HowWorks/HowWorks'
+import GetInTouch from '../GetInTouch/GetInTouch'
 const MobileDev = () => {
     const navigate = useNavigate();
-
+    const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
     const handleButtonClick = () => {
         navigate('/scrollbarMobileDev');
       };

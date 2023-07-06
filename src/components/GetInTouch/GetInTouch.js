@@ -17,16 +17,16 @@ const GetInTouch = () => {
         <div className="GetInTouchContainer">
             <div className="section1">
                 <div className='imageAmico'>
-                    <img src={amico} alt="" />
+                    <img src={amico} alt="" className='amicoImage'/>
                 </div>
                 <div className="GetIn" style={{fontSize:100, fontWeight:600, width:'30%'}}>Get In Touch</div>
                 <div className="connect">
-                    <div style={{fontSize:24, fontWeight:600}}>Lets connect</div>
-                    <div style={{ display:'flex', flexDirection:'column', gap:10}}>
+                    <div style={{fontSize:24, fontWeight:600}} className='LetsConnect'>Lets connect</div>
+                    <div style={{ display:'flex', flexDirection:'column', gap:10}} className='textFieldsContent1'>
                     <label htmlFor="name">Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" id='name' placeholder='&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Enter your name' name='Name'/>
                     </div>
-                    <div style={{ display:'flex', flexDirection:'column', gap:10}}>
+                    <div style={{ display:'flex', flexDirection:'column', gap:10}} className='textFieldsContent2'>
                     <label htmlFor="idees"> Mail ID or Phone Number </label>
                     <input type="text" id='idees' placeholder='&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Enter your mail ID or Phone number' name='idees'/>
                     </div>
@@ -37,19 +37,19 @@ const GetInTouch = () => {
                 <div className="appYardLogo">
                     <img src={appYardLogo} alt="" className='section2-logo' />
                 </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}}>
+                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}} className='section2Content1'>
                     <div style={{fontSize:24, fontWeight:600}}>Company</div>
                     <button>Our Clients</button>
                     <button>Why Choose Us</button>
                     <button>How it works</button>
                 </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}}>
+                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}}  className='section2Content2'>
                     <div style={{fontSize:24, fontWeight:600}}>Services</div>
                     <button>Mobile application</button>
                     <button>Website development</button>
                     <button>Digital Marketing</button>
                 </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}}>
+                <div style={{ display:'flex', flexDirection:'column', gap:30, alignItems:'flex-start'}}  className='section2Content3'>
                     <div style={{fontSize:24, fontWeight:600}}>Contact</div>
                     <div> <FiPhoneCall/> <button>+91 9876543210</button></div>
                     <div> <MdAlternateEmail/> <button>Domain@gmail.com</button></div>

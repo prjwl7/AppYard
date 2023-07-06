@@ -20,3 +20,38 @@
     color: white;
     background-color: #65B0D6;
 }
+
+@media screen and (max-width:480px) {
+    .HowWorkContainer{
+        top: 7%;
+        text-align: center;
+    }
+
+    .HowWorkContainerContent1{
+        font-size: 30px !important;
+        padding: 2%;
+        position: relative;
+        top: 10%;
+    }
+
+    .HowWorkContainerContent2{
+        font-size: 20px !important;
+        position: relative;
+        top: 5%;
+        padding: 7%;
+    }
+    
+    .divrocketHowWorksImage{
+        height: 30%;
+        width: 30%;
+    }
+    .rocketHowWorksImage{
+        height: 80%;
+        width: 80%;
+    }
+    
+    .howWorks-knowMore{
+        width: 150px;
+        height: 38px;
+    }
+}

@@ -43,3 +43,52 @@
     top: 5%;
     left: 80%;
 }
+
+@media screen and (max-width : 480px) {
+
+    .helpContainer{
+        top: 7%;
+        padding: 0% 0%;
+    }
+
+    .help1{
+        position: absolute;
+        top: 25%;
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .help2{
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+    .help3{
+        font-size: 18px;
+        font-weight: 400;
+        width: 75%;
+        padding: 2%;
+    }
+    .wardMoney{
+        position: absolute;
+        top: 63%;
+        left: 0%;
+    }
+    
+    .cryptoImage{
+        position: absolute;
+        top: 8%;
+        left: 65%;
+    }
+
+    .wardMoneyImage{
+        height: 30%;
+        width: 80%;
+    }
+    
+    .cryptocurrency{
+        height: 50%;
+        width: 90%;
+    }
+}

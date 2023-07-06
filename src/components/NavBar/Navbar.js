@@ -3,10 +3,12 @@ import AppYardLogo from '../assests/App yard logo.png'
 import phonepng from '../assests/phone.png'
 import Line from '../assests/Line 1.png'
 import './Navbar.css'
+import ShortAppYardLogo from '../assests/ShortAppYard.png'
+
 const Navbar = () => {
   return (
     <div className="navbar-permanent">
-        <div className='navbar-logo'><img src={AppYardLogo} alt="Logo" /></div>
+        <div className='navbar-logo'><img src={ShortAppYardLogo} alt="Logo" className='ImageNavbarLogo'/><div className='innerNavbarAppYard'>App Yard</div></div>
         <div className='navbar-buttons'>
           <button style={{width:120 }}>Home</button>
           <button>Services   </button>

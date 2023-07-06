@@ -9,7 +9,7 @@ const Helps = () => {
         <div className="help1">Unlock your Business Potential</div>
         <div className="help2">₹14CR</div>
         <div className="help3">Thats the total amount of investments we helped businesses raised</div>
-        <div className="wardMoney"><img src={wardMoney} alt="" className='wadMoney'/></div>
+        <div className="wardMoney"><img src={wardMoney} alt="" className='wardMoneyImage'/></div>
         <div className="cryptoImage"><img src={crypto} alt="" className='cryptocurrency'/></div>
     </div>
     </>

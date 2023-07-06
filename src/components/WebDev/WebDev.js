@@ -17,16 +17,16 @@ const WebDev = () => {
 
   return (
     <div className="webContainer">
-            <div className="mobile-image">
+            <div className="webMan-image">
                 <img src={manWebsite} alt="image mobile" className='image-mobile' />
             </div>
-            <div className="mobile-content">
-                <div className='mobile-content-1'>Website Development</div>
-                <div className='mobile-content-2'>That Deliver a tangible business result</div>
-                <div className='mobile-content-3'>
+            <div className="web-content">
+                <div className='web-content-1'>Website Development</div>
+                <div className='web-content-2'>That Deliver a tangible business result</div>
+                <div className='web-content-3'>
                     <ul>
                         <li>We help our clients navigate the ever changing digital landscape with a blend of creativity and practical business experience</li>
-                        <li>Our team focused approach keeps the focus on customers, and we create custom web solution that meets your individual business need</li>
+                        <li>Our talent focused approach keeps the focus on customers and we create custom web solution that meet your individual business need</li>
                     </ul>
                 </div>
                 <div>

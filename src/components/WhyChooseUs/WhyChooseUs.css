@@ -42,3 +42,83 @@
     display: flex;
     align-items: center;
 }
+
+
+@media screen and (max-width:480px)
+{   
+    .chooseContainer{
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .questionmark{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 5%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .why{
+        font-size: 60px !important;
+        font-weight: 600 !important;
+        text-align: center;
+        line-height: 1.5;
+        height: 50%;
+    }
+    .questionMarkImage2{
+        width: 30%;
+    }
+
+    .timeAndWallet{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+    .time{
+        display: flex;
+        align-items: center;
+        font-size: 15px !important;
+        width: 100%;
+    }
+    .tool{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        width: 120%;
+    }
+    .walletDiv{
+        display: flex;
+        align-items: center;
+    }
+    .timeAndWallet img{
+        width: 15%;
+    }
+
+    .timeContent , .toolContent, .walletContent{
+        gap: 10% !important;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .timeContent{
+        margin-left: 16% !important;
+    }
+    .toolContent{
+        margin-left: 10% !important;
+    }
+    .walletContent{
+        margin-left: 15% !important;
+    }
+    .timeContent2 , .toolContent2, .walletContent2{
+        width: 120%;
+    }
+
+
+}

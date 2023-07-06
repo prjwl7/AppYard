@@ -12,7 +12,7 @@
     padding: 0% 8%;
 }
 
-.mobile-content {
+.digitalMar-content {
     position: relative;
     color: white;
     opacity: 1;
@@ -28,12 +28,13 @@
     flex-direction: column;
     gap: 15px;
     padding-right: 10%;
-    backdrop-filter: blur(200px);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+
 
   }
   
   
-  .mobile-image{
+  .digitalMar-image{
     position: relative;
     left: 3%;
     top: -5%;
@@ -44,21 +45,21 @@
     width: 30vw;
   }
 
-  .mobile-content-1{
+  .digitalMar-content-1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px !important;
     font-weight: 600;
     margin-top: 2%;
   }
 
-  .mobile-content-2{
+  .digitalMar-content-2{
     font-family: 'Montserrat';
     font-size: 20px !important;
     font-weight: 600;
   }
 
 
-  .mobile-content-3 ul li{
+  .digitalMar-content-3 ul li{
     list-style: 20px;
     margin-bottom: 30px;
     margin-left: 1%;
@@ -127,3 +128,89 @@
     border-radius: 50%;
   }
   
+  @media screen and (max-width : 480px) {
+
+    .DigitalContainer{
+      top: 7%;
+    }
+  
+     .image-mobile{
+      height: 30vh;
+      width:100%;
+    }
+  
+    .digitalMar-image{
+      position: relative;
+      left: 15%;
+      top: -28%;
+    }
+    
+  
+    .digitalMar-content {
+      position: absolute;
+      height: 40vh;
+      width: 86vw;
+      padding: 2%;
+      top: 40%;
+      padding: 3%;
+      
+  
+    }
+  
+    .digitalMar-content-1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px !important;
+      font-weight: 600;
+      margin-top: 2%;
+      height: 11%;
+    }
+  
+    .digitalMar-content-2{
+      font-family: 'Montserrat';
+      font-size: 20px !important;
+      font-weight: 600;
+      height: 20%;
+      margin-top: -2%;
+    }
+    
+    .digitalMar-content-3 ul li{
+      margin-bottom: 15px;
+      margin-left: 1%;
+    }
+    .digitalMar-content-3{
+      margin-top: -15%;
+    }
+  
+
+    .div-adwords{
+      position: absolute;
+      left: 7.5%;
+      top: 30%;
+     }
+
+    .div-linkedin{
+      position: absolute;
+      left: 60%;
+      top: 30%;
+      z-index: 2;
+     }
+  
+     .div-seo{
+      position: absolute;
+      top: 75%;
+      left: 60%;
+    }
+  
+      .star1{
+        height: 15%;
+        width: 100%;
+      }
+      .star4{
+        height: 30%;
+        width: 100%;
+      }
+      .linkedInImage{
+        height: 20%;
+      }
+  
+  }

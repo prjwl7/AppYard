@@ -2,7 +2,7 @@
 
 .mobileContainer{
     position: absolute;
-    top: 9%;
+    top: 9.6%;
     background-color: #E77E9F;
     height: 100%;
     width: 100%;
@@ -64,7 +64,7 @@
   }
 
   .mobile-knowMore{
-    background-color:#446E83;
+    background-color:#65B0D6;
     color: white;
     border-radius: 10px;
     border-style: none;
@@ -124,4 +124,71 @@
     background-color: #fff;
     border-radius: 50%;
   }
+
+@media screen and (max-width : 480px) {
+
+  .mobileContainer{
+    top: 7%;
+  }
+
+   .image-mobile{
+    height: 30vh;
+    width:100%;
+  }
+
+  .mobile-image{
+    position: relative;
+    left: 30%;
+    top: -30%;
+  }
+  
+
+  .mobile-content {
+    position: absolute;
+    height: 40vh;
+    width: 86vw;
+    padding: 2%;
+    top: 40%;
+    padding: 3%;
+    
+
+  }
+
+  .mobile-content-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px !important;
+    font-weight: 600;
+    margin-top: 2%;
+    height: 11%;
+  }
+
+  .mobile-content-2{
+    font-family: 'Montserrat';
+    font-size: 20px !important;
+    font-weight: 600;
+    height: 10%;
+  }
+
+  .div-star1{
+    position: absolute;
+    left: 7.5%;
+    top: 30%;
+   }
+
+   .div-star4{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+  }
+
+    .star1{
+      height: 15%;
+      width: 100%;
+    }
+    .star4{
+      height: 30%;
+      width: 100%;
+    }
+
+}
   

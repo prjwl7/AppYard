@@ -12,7 +12,7 @@
     padding: 0% 8%;
 }
 
-.mobile-content {
+.web-content {
     position: relative;
     color: white;
     opacity: 1;
@@ -32,7 +32,7 @@
   }
 
   
-  .mobile-image{
+  .webMan-image{
     position: relative;
     left: 3%;
     top: -5%;
@@ -43,21 +43,21 @@
     width: 30vw;
   }
 
-  .mobile-content-1{
+  .web-content-1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px !important;
     font-weight: 600;
     margin-top: 2%;
   }
 
-  .mobile-content-2{
+  .web-content-2{
     font-family: 'Montserrat';
     font-size: 20px !important;
     font-weight: 600;
   }
 
 
-  .mobile-content-3 ul li{
+  .web-content-3 ul li{
     list-style: 20px;
     margin-bottom: 30px;
     margin-left: 1%;
@@ -119,5 +119,87 @@
     height: 15px; /* Adjust the size of the bullet point as needed */
     background-color: #fff; /* Adjust the color of the bullet point as needed */
     border-radius: 50%;
+  }
+
+  @media screen and (max-width : 480px) {
+
+    .webContainer{
+      top: 7%;
+    }
+  
+     .image-mobile{
+      height: 30vh;
+      width:100%;
+    }
+  
+    .webMan-image{
+      position: relative;
+      left: 15%;
+      top: -30%;
+    }
+    
+  
+    .web-content {
+      position: absolute;
+      height: 40vh;
+      width: 86vw;
+      top: 40%;
+      padding: 3%;
+      gap: 10px;
+      
+  
+    }
+  
+    .web-content-1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px !important;
+      font-weight: 600;
+      margin-top: 2%;
+      height: 11%;
+    }
+  
+    .web-content-2{
+      font-family: 'Montserrat';
+      font-size: 20px !important;
+      font-weight: 600;
+      height: 10%;
+    }
+    
+    .web-content-3 ul li{
+      margin-bottom: 10px;
+      margin-left: 1%;
+    }
+
+    .web-content-3{
+      margin-top: -10%;
+    }
+
+    .div-html{
+      position: absolute;
+      left: 7.5%;
+      top: 30%;
+     }
+  
+     .div-react{
+      position: absolute;
+      top: 75%;
+      left: 60%;
+    }
+    .div-css{
+      position: absolute;
+      top: 32%;
+      z-index: 2;
+      left: 68%;
+    }
+
+      .star1{
+        height: 15%;
+        width: 100%;
+      }
+      .star3{
+        height: 30%;
+        width: 100%;
+      }
+  
   }
   
