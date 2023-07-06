@@ -12,10 +12,11 @@ import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 import HowWorks from '../HowWorks/HowWorks'
 import GetInTouch from '../GetInTouch/GetInTouch'
 const MobileDev = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
     const handleButtonClick = () => {
-        navigate('/scrollbarMobileDev');
+        // navigate('/scrollbarMobileDev');
+        console.log('Working');
       };
   return (
     <>

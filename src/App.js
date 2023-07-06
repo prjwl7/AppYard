@@ -35,7 +35,7 @@ function App() {
   return (
     
      <>
-         <Router basename={process.env.PUBLIC_URL}>
+         {/* <Router basename={process.env.PUBLIC_URL}>
          <Navbar></Navbar>
     <Routes>
       <Route path="/" element = {<ScrollBar components={components}/>} />
@@ -47,7 +47,9 @@ function App() {
       />
     </Routes>
 
-         </Router>
+         </Router> */}
+          <Navbar/>
+         <ScrollBar components={components}></ScrollBar>
      </>
   );
 }

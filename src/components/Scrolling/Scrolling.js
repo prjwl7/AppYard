@@ -7,27 +7,35 @@ const ScrollBar = ({ components }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (event) => {
       const scrollContainer = scrollContainerRef.current;
       if (scrollContainer) {
         const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
         const maxScrollTop = scrollHeight - clientHeight;
         const threshold = maxScrollTop * 0.935666; // Adjust the threshold as needed (90% in this example)
 
-        if (scrollTop >= threshold) {
+        const isReverseScroll = event.deltaY < 0;
+        const isScrollAtTop = scrollTop === 0;
+        const isScrollAtBottom = scrollTop === maxScrollTop;
+
+        if (isReverseScroll && currentIndex === 0 && isScrollAtTop) {
+          // Prevent reverse scrolling on the first component
+          return;
+        } else if (!isReverseScroll && currentIndex === components.length - 1 && isScrollAtBottom) {
+          // Disable scrolling further on the last component
+          return;
+        } else if (isReverseScroll && isScrollAtTop) {
+          // Reset the scrollbar position to the bottom and update the component index
+          scrollContainer.scrollTop = maxScrollTop;
+          setCurrentIndex((prevIndex) => prevIndex - 1);
+        } else if (!isReverseScroll && isScrollAtBottom) {
           // Reset the scrollbar position to the top and update the component index
           scrollContainer.scrollTop = 0;
-          setCurrentIndex((prevIndex) => getNextIndex(prevIndex));
+          setCurrentIndex((prevIndex) => prevIndex + 1);
         }
 
         setScrollPosition(scrollTop);
       }
-    };
-
-    const getNextIndex = (currentIndex) => {
-      // Calculate the next index based on the defined order
-      const nextIndex = currentIndex + 1;
-      return nextIndex >= components.length ? 0 : nextIndex;
     };
 
     const scrollContainer = scrollContainerRef.current;
@@ -37,7 +45,7 @@ const ScrollBar = ({ components }) => {
         scrollContainer.removeEventListener('wheel', handleScroll);
       };
     }
-  }, [components]);
+  }, [components, currentIndex]);
 
   if (!components || components.length === 0) {
     return null;
