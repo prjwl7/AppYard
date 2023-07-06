@@ -38,12 +38,7 @@ function App() {
          <Router basename={process.env.PUBLIC_URL}>
          <Navbar></Navbar>
     <Routes>
-      <Route path="/" element = {<MobileDev/>} />
-      <Route path="/AppYard/WebDev" element = {<WebDev/>} />
-      <Route path="/AppYard/DigitalMar" element = {<DigitalMar/>} />
-      <Route
-        path="/scrollbar" element = {<ScrollBar components={components} />}
-      />
+      <Route path="/" element = {<ScrollBar components={components}/>} />
       <Route
         path="/scrollbarMobileDev" element = {<ScrollBar components={componentsMobileDev} />}
       />
