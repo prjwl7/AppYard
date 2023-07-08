@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AppYard/static/css/main.e0c0a299.css",
-    "main.js": "/AppYard/static/js/main.7d864292.js",
+    "main.js": "/AppYard/static/js/main.279924d7.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
     "static/media/rocket (1).png": "/AppYard/static/media/rocket (1).6fd9e3d9673fe03aeb54.png",
     "static/media/man-website.png": "/AppYard/static/media/man-website.10afed9469c7838e4c19.png",
@@ -51,11 +51,11 @@
     "index.html": "/AppYard/index.html",
     "static/media/icons8-menu.svg": "/AppYard/static/media/icons8-menu.d21ce5ca420021645d20.svg",
     "main.e0c0a299.css.map": "/AppYard/static/css/main.e0c0a299.css.map",
-    "main.7d864292.js.map": "/AppYard/static/js/main.7d864292.js.map",
+    "main.279924d7.js.map": "/AppYard/static/js/main.279924d7.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0c0a299.css",
-    "static/js/main.7d864292.js"
+    "static/js/main.279924d7.js"
   ]
 }
