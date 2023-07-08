@@ -90,14 +90,16 @@
         height: 100%;
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        padding: 1%;
+        padding:0%;
         color: #FFF;
     }
     
     .insideQuoteContainer{
         background-color: #484848;
-        height: 80%;
+        height: 85%;
         width: 80%;
         border-radius: 10px;
         display: flex;
@@ -114,41 +116,41 @@
     .QuoteImg{
         position: absolute;
         top: 50%;
-        height: 40%;
+        height: 30%;
         width: 30%;
     }
     
     .quoteTextFields{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        height: 36%;
+        height: 40%;
         position: absolute;
         top: 52%;
-        left: 20%;
+        left: 15%;
+        gap: 0px;
     }
 
     .quotetextFieldsContent1{
         gap: 5px !important;
-        height: 28%;
+        height: 40%;
     }
     .quotetextFieldsContent2{
         gap: 5px !important;
-        height: 28%;
+        height: 40%;
     }
     .quotetextFieldsContent3{
-        gap: 5px !important;
-        height: 40%;
+        gap: 10px !important;
+        height: 50%;
     }
 
     .quotetextFieldsContent1 input{
-        width: 300px;
+        width: 250px;
     }
     .quotetextFieldsContent2 input{
-        width: 300px;
+        width: 250px;
     }
     .quotetextFieldsContent3 input{
-        width: 300px;
+        width: 250px;
         height: 80px !important;
     }
     .shortLogoImage{
@@ -167,11 +169,11 @@
     }
     
     .quoteHeading{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
-        width: 35%;
+        width: 38%;
         line-height: 1.3;
-        height: 30%;
+        height: 11%;
         text-align: center;
         position: absolute;
         top: 43%;
@@ -188,5 +190,7 @@
         height: 50% !important;
         width: 50%;
         border-radius: 10px;
+        position: relative;
+        top: 10%;
     }
 }

@@ -145,12 +145,12 @@
 
   .mobile-content {
     position: absolute;
-    height: 40vh;
-    width: 86vw;
+    height: 45vh;
+    width: 90vw;
     padding: 2%;
     top: 40%;
     padding: 3%;
-    
+    gap: 0px;  
 
   }
 
@@ -160,13 +160,34 @@
     font-weight: 600;
     margin-top: 2%;
     height: 11%;
+    min-height: 11%;
   }
+
 
   .mobile-content-2{
     font-family: 'Montserrat';
     font-size: 20px !important;
     font-weight: 600;
     height: 10%;
+    min-height: 18%;
+  }
+
+  ul{
+    padding: 0;
+    margin-top: -10%;
+    font-size: 15px;
+    font-weight: 200;
+    width: 85%;
+  }
+
+  .mobile-content-3{
+    margin-top: -5%;
+    min-height: 30%;
+    width: 100%;
+  }
+  .mobile-content-3 ul li{
+    margin-bottom: 10px;
+    margin-left: 1%;
   }
 
   .div-star1{
@@ -177,7 +198,7 @@
 
    .div-star4{
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 60%;
   }
 

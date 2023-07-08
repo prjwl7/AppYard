@@ -57,11 +57,13 @@
         font-size: 35px;
         font-weight: 400;
         text-align: center;
+        height: 20%;
     }
 
     .help2{
         font-size: 100px;
         font-weight: 600;
+        margin-top: 15%;
     }
 
     .help3{
@@ -72,7 +74,7 @@
     }
     .wardMoney{
         position: absolute;
-        top: 63%;
+        top: 69%;
         left: 0%;
     }
     

@@ -5,8 +5,6 @@
     width: 100vw;   
     overflow-y: scroll;
     overflow-x: hidden;
-    scrollbar-width: 100px;
-    scrollbar-color: #888888 red;
   }
   
   /* Scroll content */
@@ -17,7 +15,7 @@
   
   /* Individual component */
   .component {
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 1s ease-in-out;
     opacity: 0;
     pointer-events: none;
   }
@@ -66,15 +64,17 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #FFF;
+   height: 40vh;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #000;
     border-right: none;
     border-left: none;
     border-radius: 10px;
+    height: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover{

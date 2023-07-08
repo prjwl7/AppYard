@@ -9,10 +9,10 @@ import htmlimg from '../assests/html-5 1.png'
 import { useNavigate } from 'react-router-dom'
 
 const WebDev = () => {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        navigate('/scrollbarWebDev');
+        //navigate('/scrollbarWebDev');
         console.log('Working');
       };
 

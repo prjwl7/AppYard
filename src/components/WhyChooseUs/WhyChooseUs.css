@@ -47,7 +47,7 @@
 @media screen and (max-width:480px)
 {   
     .chooseContainer{
-        top: 7%;
+        top: 9%;
         display: flex;
         flex-direction: column;
         padding-left: 0%;
@@ -58,63 +58,74 @@
         flex-direction: column;
         width: 100%;
         position: relative;
-        top: 5%;
+        top: 4%;
         left: 0%;
         text-align: center;
+        gap: 0;
     }
 
     .why{
-        font-size: 60px !important;
+        font-size: 40px !important;
         font-weight: 600 !important;
         text-align: center;
-        line-height: 1.5;
-        height: 50%;
+        line-height: 1.2;
+        height: 40%;
+        min-height: 42%;
+        width: 100%;
     }
     .questionMarkImage2{
-        width: 30%;
+        width: 20%;
+    }
+    .questionMarkImage{
+        position: relative;
+        bottom: 10%;
     }
 
     .timeAndWallet{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 50%;
-        left: 5%;
+        top: 30%;
+        left: 3%;
+        width: 100vw;
+        gap: 30px;
     }
     .time{
         display: flex;
         align-items: center;
         font-size: 15px !important;
-        width: 100%;
+        width: 90%;
+        min-height: 20%;
     }
     .tool{
         display: flex;
         align-items: center;
-        font-size: 15px;
-        width: 120%;
+        font-size: 15px !important;
+        width: 100%;
     }
     .walletDiv{
         display: flex;
         align-items: center;
+        width: 90%;
     }
     .timeAndWallet img{
         width: 15%;
     }
 
     .timeContent , .toolContent, .walletContent{
-        gap: 10% !important;
-        width: 100%;
-        margin-bottom: 5%;
+        gap: 5% !important;
+        width: 70% !important;
+        margin-bottom: 2%;
     }
 
     .timeContent{
-        margin-left: 16% !important;
-    }
-    .toolContent{
         margin-left: 10% !important;
     }
+    .toolContent{
+        margin-left: 8% !important;
+    }
     .walletContent{
-        margin-left: 15% !important;
+        margin-left: 10% !important;
     }
     .timeContent2 , .toolContent2, .walletContent2{
         width: 120%;

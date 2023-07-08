@@ -3,7 +3,7 @@ import './GetInTouch.css'
 
 import appYardLogo from '../assests/App yard logo.png'
 import amico from '../assests/amico.png'
-
+import ShortAppYardLogo from '../assests/ShortAppYard.png'
 import {FiPhoneCall} from 'react-icons/fi'
 import {MdAlternateEmail} from 'react-icons/md'
 import {AiOutlineCopyright} from 'react-icons/ai'
@@ -14,6 +14,7 @@ import {BsFacebook} from 'react-icons/bs'
 const GetInTouch = () => {
   return (
     <>
+        <div className="ShortAppYardGetInLogo" style={{opacity:0}}><img src={ShortAppYardLogo} alt="" className='ShortAppYardGetInLogoImage'/>App Yard</div>
         <div className="GetInTouchContainer">
             <div className="section1">
                 <div className='imageAmico'>

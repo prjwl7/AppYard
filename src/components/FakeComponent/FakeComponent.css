@@ -1,0 +1,9 @@
+.fakeComponentContainer{
+    position: fixed;
+    height: 800%;
+    width: 100%;
+    position:absolute;
+    top: 9.6%;
+    background-color: transparent;
+    z-index: -1;
+}

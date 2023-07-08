@@ -13,35 +13,41 @@
     align-items: center;
     gap: 8%;
     padding: 1%;
-    height: 50px;
+    height: 100px;
     width: 100%;
-    padding-right: 4%;
+    padding-right: 0%;
+    padding-left: 30%;
     position: absolute !important;
     top: 0;
     left: 0;
     color: #FFF;
-    z-index: 999;
+    z-index: 2;
 }
 
 .navbar-logo{
-    margin-left: 4%;
+    position: absolute;
+    top: 2%;
+    left: 3%;
     background-color: transparent;
     cursor: pointer;
     display: flex;
     align-items: center;
+    gap: 10px;
+    color: white;
     font-size: 40px;
     font-weight: 600;
+    z-index: 3;
 }
 
 .ImageNavbarLogo{
-    height: 30%;
-    width: 30%;
+    height: 60px;
+    width: 60px;
 }
 
 .navbar-buttons{
     display: flex;
     flex-direction: row;
-    opacity: 0;
+    opacity: 1;
 }
 
 .navbar-buttons button{
@@ -83,7 +89,9 @@ button:hover{
     font-size: 40px;
     font-weight: 600;
 }
-
+.mobile-nav-toggle{
+    display: none;
+}
 @media screen and (max-width : 1700px) {
     .quote{
         opacity: 1;
@@ -99,25 +107,38 @@ button:hover{
         right: -1%;
         width: 80%;
     }
-    .navbar-logo{
-        width: 20%;
-        gap: 10px;
+    .ImageNavbarLogo{
+        height: 40px;
+        width: 40px;
+        opacity: 1;
     }
     .navbar-buttons{
-        opacity: 0;
-        width: 20%;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
     .navbar-permanent{
-        gap: 2%;
-        padding: 1%;
-        height: 50px;
-        width: 100%;
-        padding-right: 4%;
-        position: absolute !important;
-        top: 0;
-        left: 0;
+       position: fixed;
+       gap:20%;
+       height: 100%;
+       inset: 0% 0% 0% 30%;
+       background: #333333;
+       backdrop-filter: blur(0.5rem);
+       flex-direction: column;
+       padding: min(20vh, 10rem) 2rem 2rem 0rem;
+       transform: translateX(100%);
+       z-index: 9999;
     }
-
+    .navbar-permanent[data-visible = "true"]{
+        transform: translateX(0%);
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-permanent[data-visible = "false"]{
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+    }
     .quote-button{
         width: 160px;
         height: 40px;
@@ -127,21 +148,24 @@ button:hover{
         height: 100%;
         width: 10%;
     }
-
-    .navbar-logo{
-        height: 100%;
-        width: 50%;
-    }
     .innerNavbarAppYard{
         font-size: 20px;
         font-weight: 600;
         width: 150px;
         opacity: 1;
     }
-    
-    
-    .ImageNavbarLogo{
-    height: 100%;
-    width: 50%;
-}
+
+    .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    background:url('../assests/icons8-menu.svg');
+    background-repeat: no-repeat;
+    width: 3rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 0.5rem;
+    right: 2rem;
+    z-index: 99999;
+
+    }
 }

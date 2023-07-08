@@ -148,12 +148,11 @@
   
     .digitalMar-content {
       position: absolute;
-      height: 40vh;
-      width: 86vw;
-      padding: 2%;
+      height: 50vh;
+      width: 90vw;
       top: 40%;
       padding: 3%;
-      
+      gap: 0;
   
     }
   
@@ -163,6 +162,7 @@
       font-weight: 600;
       margin-top: 2%;
       height: 11%;
+      min-height: 11%;
     }
   
     .digitalMar-content-2{
@@ -171,14 +171,22 @@
       font-weight: 600;
       height: 20%;
       margin-top: -2%;
+      min-height: 20%;
     }
     
     .digitalMar-content-3 ul li{
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       margin-left: 1%;
+      width: 100%;
     }
     .digitalMar-content-3{
-      margin-top: -15%;
+      margin-top: -12%;
+      overflow-y: scroll;
+      height: 70%;
+      min-height: 65%;
+      padding: 0%;
+      gap: 0;
+      width: 100%;
     }
   
 
@@ -197,7 +205,7 @@
   
      .div-seo{
       position: absolute;
-      top: 75%;
+      top: 83%;
       left: 60%;
     }
   

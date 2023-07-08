@@ -1,17 +1,9 @@
-.scrollbar2 {
+.fakeComponentContainer{
     height: 100%;
     width: 100%;
-    overflow: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: lightgray gray;
-  }
-  
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
     position: absolute;
-    width: 100%;
-    overflow: scroll;
+    top: 9.6%;
+    background-color: red;
+
   }
   

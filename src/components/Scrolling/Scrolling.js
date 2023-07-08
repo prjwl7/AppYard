@@ -1,10 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Component } from 'react';
 import './Scrolling.css';
+
+import FakeComponent from '../FakeComponent/FakeComponent';
 
 const ScrollBar = ({ components }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const componentHeight = 300; // Adjust the height of each component as desired
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -12,7 +15,6 @@ const ScrollBar = ({ components }) => {
       if (scrollContainer) {
         const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
         const maxScrollTop = scrollHeight - clientHeight;
-        const threshold = maxScrollTop * 0.935666; // Adjust the threshold as needed (90% in this example)
 
         const isReverseScroll = event.deltaY < 0;
         const isScrollAtTop = scrollTop === 0;
@@ -41,8 +43,10 @@ const ScrollBar = ({ components }) => {
     const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
       scrollContainer.addEventListener('wheel', handleScroll);
+      scrollContainer.addEventListener('scroll', handleScroll);
       return () => {
         scrollContainer.removeEventListener('wheel', handleScroll);
+        scrollContainer.removeEventListener('scroll', handleScroll);
       };
     }
   }, [components, currentIndex]);
@@ -51,12 +55,14 @@ const ScrollBar = ({ components }) => {
     return null;
   }
 
+  const totalScrollHeight = componentHeight * components.length ;
+
   return (
     <div className="scroll-container" ref={scrollContainerRef}>
-      <div className="scroll-content">
+      <div className="scroll-content" style={{ height: `${totalScrollHeight}px` }}>
         {components.map((Component, index) => (
-          <div key={index} className={`component ${index === currentIndex ? 'active' : ''}`}>
-            <Component />
+          <div key={index} className={`component ${index === currentIndex ? 'active' : ''}`} style={{ height: `${componentHeight}px` }}>
+            {index === currentIndex && <Component />}
           </div>
         ))}
       </div>
