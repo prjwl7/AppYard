@@ -20,18 +20,23 @@ import WebDev3 from './components/WebDev/WebDev3';
 import WebDev4 from './components/WebDev/WebDev4';
 import WebDev5 from './components/WebDev/WebDev5';
 import GetAQuote from './components/GetAQuote/GetAQuote';
-import FakeComponent from './components/FakeComponent/FakeComponent';
-
+import DigiMar2 from './components/DigitalMar/DigiMar2';
+import DigiMar3 from './components/DigitalMar/DigiMar3';
+import DigiMar4 from './components/DigitalMar/DigiMar4';
+import DigiMar5 from './components/DigitalMar/DigiMar5';
+import DigiMar6 from './components/DigitalMar/DigitalMar6';
+import DigiMar7 from './components/DigitalMar/DigiMar7';
 //Libraries
 import { BrowserRouter as Router, Routes, Route , HashRouter} from 'react-router-dom';
 import 'zone.js';
+import DigiMar8 from './components/DigitalMar/DigiMar8';
 
 
 function App() {
-  const components1 = [FakeComponent, FakeComponent, FakeComponent, FakeComponent, FakeComponent,];
   const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch, GetAQuote];
   const componentsWebDev = [WebDev2, WebDev3, WebDev4, WebDev5];
   const componentsMobileDev = [MobileDev2, MobileDev3, MobileDev4, MobileDev5];
+  const componentDigitalMarketing = [DigiMar2, DigiMar3, DigiMar4, DigiMar5, DigiMar6, DigiMar7, DigiMar8]
 
   return (
     
@@ -46,14 +51,18 @@ function App() {
       <Route
         path="/scrollbarWebDev" element = {<ScrollBar components={componentsWebDev} />}
       />
+      <Route
+        path="/scrollbarDigitalMarketing" element = {<ScrollBar components={componentDigitalMarketing} />}
+      />
     </Routes>
 
          </Router> 
+
+         
       {/* <Navbar></Navbar>
-      <FakeComponent></FakeComponent>
       <ScrollBar components = {components}></ScrollBar>
-      <FakeComponent></FakeComponent>
-      <ScrollBar components={components}></ScrollBar> */}
+      <ScrollBar components={components}></ScrollBar>
+      <DigiMar4></DigiMar4> */}
      
      </>
   );

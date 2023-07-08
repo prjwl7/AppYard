@@ -1,0 +1,50 @@
+.digiMar2Container{
+    background-color: #3CA3BB;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 9.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.digiMar2Heading{
+    color: white;
+    width: 60vw;
+    border: 1px solid #121212;
+    height: 15vh;
+    border-radius: 10px;
+    font-size: 110px;
+    font-weight: 800;
+    text-align-last: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assests/digimar.png');
+    background-repeat: no-repeat;
+    background-position-y: 41%;
+    background-position-x: 50%;
+    position: absolute;
+    top: 32%;  
+    z-index: 1;
+}
+
+.digiMar2Heading1{
+    color: white;
+    width: 60vw;
+    border: 1px solid #121212;
+    height: 15vh;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0.3));
+    position: absolute;
+    top: 32%;
+}
+
+.Digi2Logo{
+    position: relative;
+    left: 35%;
+    bottom: 20%;
+
+}
