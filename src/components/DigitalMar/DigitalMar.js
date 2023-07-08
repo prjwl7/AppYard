@@ -4,7 +4,14 @@ import adwords from '../assests/adwords 2.png'
 import linkedin from '../assests/linkedin 2.png'
 import seo from '../assests/seo 2.png'
 import DigiImage from '../assests/digimar.png'
+import { useNavigate } from 'react-router-dom'
 const DigitalMar = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/scrollbarDigitalMarketing');
+        console.log('Working');
+      };
   return (
     <>
         <div className="DigitalContainer">
@@ -21,7 +28,7 @@ const DigitalMar = () => {
                     </ul>
                 </div>
                 <div>
-                    <button className='mobile-knowMore'>Know more</button>
+                    <button className='mobile-knowMore' onClick={handleButtonClick}>Know more</button>
                 </div>
             </div>
             <div className='div-adwords'><img src={adwords} alt=""  className='star1'/></div>

@@ -2,7 +2,11 @@ import React from 'react'
 import './DigiMar2.css'
 import DigiImage from '../assests/digimar.png'
 import ShortAppYardLogo from '../assests/ShortAppYard.png'
+
+import { useNavigate } from 'react-router-dom'
+
 const DigiMar2 = () => {
+ 
   return (
     <>
       <div className="digiMar2Container">
