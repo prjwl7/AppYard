@@ -58,11 +58,12 @@ function App() {
 
          </Router> 
 
-         
-      {/* <Navbar></Navbar>
+         {/* <Navbar></Navbar>
+      <Navbar></Navbar>
       <ScrollBar components = {components}></ScrollBar>
       <ScrollBar components={components}></ScrollBar>
-      <DigiMar4></DigiMar4> */}
+      <DigiMar4></DigiMar4>
+      <ScrollBar components={componentDigitalMarketing}></ScrollBar> */}
      
      </>
   );

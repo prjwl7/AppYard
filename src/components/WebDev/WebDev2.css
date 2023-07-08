@@ -14,8 +14,8 @@
 .headingMobileWeb{
     position: absolute;
     color: white;
-    height: 10vh;
-    width: 42vw;
+    height: 15vh;
+    width: 60vw;
     border-radius: 10px;
     top: 35%;
     border: 1px solid #FFFFFF;
@@ -30,7 +30,7 @@
     background-image: url('../assests/man-website.png');
     background-repeat: no-repeat;
     background-size:40;
-    background-position-y: 50%;
+    background-position-y: 40%;
     background-position-x: 50%;
     filter: blur(3px);
     font-size: 60px;
@@ -40,8 +40,8 @@
 .headingMobileFrontWeb{
     position: absolute;
     color: white;
-    height: 10vh;
-    width: 42vw;
+    height: 15vh;
+    width: 60vw;
     border-radius: 10px;
     top:35%;
     border-style: none;
