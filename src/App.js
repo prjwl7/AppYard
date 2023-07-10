@@ -45,7 +45,7 @@ function App() {
   return (
     
      <>
-         <Router basename={process.env.PUBLIC_URL}>
+         {/* <Router basename={process.env.PUBLIC_URL}>
          <Navbar></Navbar>
     <Routes>
       <Route path="/" element = {<ScrollBar components={components}/>} />
@@ -61,10 +61,10 @@ function App() {
       />
     </Routes>
 
-         </Router> 
+         </Router>  */}
 
-         {/* <Navbar></Navbar>
-      <ScrollBar components={componentDigitalMarketing}></ScrollBar> */}
+         <Navbar></Navbar>
+      <ScrollBar components={componentDigitalMarketing}></ScrollBar>
       {/* <Navbar></Navbar>
       <DigiMar4></DigiMar4> */}
     
