@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
-
   const handleToggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
@@ -22,6 +21,7 @@ const Navbar = () => {
         aria-controls="primary-navigation"
         aria-expanded={isNavVisible}
         className="mobile-nav-toggle"
+        cross-visible = {isNavVisible ? "true" : "false"}
         onClick={handleToggleNav}
       >
         <span className="sr-only"></span>

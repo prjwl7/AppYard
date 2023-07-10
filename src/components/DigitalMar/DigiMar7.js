@@ -7,7 +7,7 @@ const DigiMar7 = () => {
         <div className="digi7container">
            <div className="digi7Content">
            <div className="digi7heading1">Google Ratings</div>
-            <div className="digi7Image"><img src={googleImage} alt="" /></div>
+            <div className="digi7Image"><img src={googleImage} alt=""  className='google7Img'/></div>
             <div className="digi7heading2">Boost your Credibility and reputation with positive google ratings and reviews</div>
            </div>
             <div className="googleLines">

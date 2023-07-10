@@ -40,3 +40,32 @@
     min-height: 30%;
     min-width: 40%;
 }
+
+@media screen and (max-width : 480px) {
+
+    .WebDev4Container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Web4Image{
+        height: 35%;
+    }
+    .Web4Img{
+        height: 100%;
+    }
+    .Web4Content{
+        width: 100%;
+        gap: 0px;
+        height: 40%;
+    }
+    .Web4ContentTop{
+        font-size: 20px;
+        height: 40%;
+    }
+    .Web4List ul li{
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        margin-bottom: 10px !important;
+    }
+    
+}

@@ -7,7 +7,7 @@ const DigiMar6 = () => {
     <>
         <div className="DigitalMar6Container">
             <div className="digi6heading1">LinkedIn ADS</div>
-            <div className="digi6Image"><img src={linkedin1} alt="" /></div>
+            <div className="digi6Image"><img src={linkedin1} alt="" className='linkedIn6Image'/></div>
             <div className="digi6heading2">Reach highly Targeted and professional Audience with Linked IN ADS</div>
         </div>
     </>

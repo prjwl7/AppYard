@@ -12,17 +12,18 @@ const MobileDev3 = () => {
   return (
     <>
         <div className="MobileDev3Container">
-            <div style={{fontSize:60, fontWeight:600}}  >Our Technology Stack</div>
+            <div style={{fontSize:60, fontWeight:600}} className='Mob3heading1' >Our Technology Stack</div>
             <div className="stackTech">
                 <div><img src={java} alt="" /></div>
                 <div><img src={firebase} alt="" /></div>
                 <div><img src={flutter} alt="" /></div>
                 <div><img src={kotlin} alt="" /></div>
+                <br  style={{display:'none'}}/>
                 <div><img src={reactNative} alt="" /></div>
                 <div><img src={androidStudio} alt="" /></div>
                 <div><img src={aws} alt="" /></div>
             </div>
-            <div className='shortLogoAppYard'><img src={logo} alt="" />App Yard</div>
+            <div className='shortLogoAppYard'><img src={logo} alt="" className='mob3logo'/>App Yard</div>
         </div>
     </>
   )

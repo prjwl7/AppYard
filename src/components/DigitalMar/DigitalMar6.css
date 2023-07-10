@@ -24,3 +24,35 @@
     width: 40%;
     text-align: center;
 }
+
+@media screen and (max-width : 480px) {
+    .digi6heading1{
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    .digi6Image{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkedIn6Image{
+        height: 100%;
+    }
+    .DigitalMar6Container{
+        padding: 0% 2%;
+        gap: 5%;
+        justify-content: center;
+    }
+    .digi6heading2{
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+}

@@ -42,3 +42,47 @@
     font-weight: 1000;
     gap: 10px;
 }
+
+
+@media screen and (max-width : 480px) {
+
+    .Mob3heading1{
+        font-size: 24px !important;
+        font-weight: 500 !important;
+    }
+
+
+    br {
+        display: none !important; /* Remove the line break element */
+      }
+    
+      .stackTech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .stackTech div {
+        height: 100px;
+        width: 20%;
+        padding: 1%;
+      }
+      .stackTech div img{
+        height: 90%;
+        width: 75%;
+    }
+    .shortLogoAppYard{
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 20px !important;
+        font-weight: 100;
+        gap: 10px;
+    }
+
+    .mob3logo{
+        height: 60%;
+    }
+}

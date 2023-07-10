@@ -1,0 +1,51 @@
+.uxPage1Container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 9.6%;
+    background-color: #4F8BDA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 2%;
+}
+
+.uxPage1Image{
+    height: 100%;
+}
+
+.uxPage1Img{
+    height: 100%;
+}
+
+.uxPage1heading{
+    height: 23%;
+    background: linear-gradient(0deg, rgba(44, 42, 42, 0.41), rgba(44, 42, 42, 0.41));
+    border-radius: 10px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    padding-top: 2%;
+    padding: 2% 8%;
+    border: 1px solid rgba(44, 42, 42, 0.55);
+    position: relative;
+    top: -50%;
+    backdrop-filter: blur(8px);
+    font-size: 100px;
+    font-weight: 1000;
+}
+
+.uxPag1Logo{
+    position: absolute;
+    bottom: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    right: 15%;
+}

@@ -117,7 +117,13 @@ button:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 40px;
+        width: 100%;
+        position: relative;
+        right: 10%;
+    }
+    .navbar-buttons button{
+        font-size: 20px;
     }
     .navbar-permanent{
        position: fixed;
@@ -155,7 +161,7 @@ button:hover{
         opacity: 1;
     }
 
-    .mobile-nav-toggle{
+    .mobile-nav-toggle[cross-visible = "false"]{
     display: block;
     position: absolute;
     background:url('../assests/icons8-menu.svg');
@@ -166,6 +172,21 @@ button:hover{
     top: 0.5rem;
     right: 2rem;
     z-index: 99999;
+    transition: background 0.2s ease-in-out;
+
+    }
+    .mobile-nav-toggle[cross-visible = "true"]{
+    display: block;
+    position: absolute;
+    background:url('../assests/multiply-icon.png');
+    background-repeat: no-repeat;
+    width: 4rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 0.5rem;
+    right: 2rem;
+    z-index: 99999;
+    transition: background 0.2s ease-in-out;
 
     }
 }

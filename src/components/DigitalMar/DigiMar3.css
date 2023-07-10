@@ -23,3 +23,35 @@
     width: 55%;
     text-align: center;
 }
+
+@media screen and (max-width : 480px) {
+    .digi3heading1{
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    .digi3Image{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .digi3seo{
+        height: 100%;
+    }
+    .DigiMar3Container{
+        padding: 10% 2%;
+        gap: 7%;
+        justify-content: center;
+    }
+    .digi3heading2{
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+}

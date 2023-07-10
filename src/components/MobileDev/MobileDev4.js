@@ -9,7 +9,7 @@ const MobileDev4 = () => {
     <>
         <div className="MobileDev4Container">
             <div className="Mobile4Image">
-                <img src={bro} alt="" />
+                <img src={bro} alt="" className='mob4Img'/>
             </div>
             <div className="Mobile4Content">
                 <div className='Mobile4ContentTop'>Our mobile app development services have a Proven track record</div>

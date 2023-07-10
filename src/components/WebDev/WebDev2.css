@@ -52,3 +52,48 @@
     padding: 1.1% 7.6%;
     text-align: center;
 }
+
+@media screen and (max-width : 480px) {
+
+    .WebImage{
+        height: 60%;
+        position: relative;
+        top: 11%;
+    }
+
+    .Web2Img{
+        height: 100%;
+    }
+    .headingMobileWeb{
+        width: 90%;
+        background-size:115%;
+        background-position-y: 40%;
+        background-position-x: 50%;
+        height: 10%;
+    }
+    .headingMobileFrontWeb{
+        width: 90%;
+        height: 10%;
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 5%;
+    }
+    .WeblogoShort{
+        height: 20%;
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        position: absolute;
+        left: 60%;
+        top: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Web2LogoImg{
+        height: 40%;
+        width: 50%;
+    }
+}

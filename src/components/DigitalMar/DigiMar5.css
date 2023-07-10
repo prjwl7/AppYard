@@ -23,3 +23,35 @@
     width:40%;
     text-align:center;
 }
+
+@media screen and (max-width : 480px) {
+    .digi5heading1{
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    .digiMar5Image{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .digi5Img{
+        height: 100%;
+    }
+    .digiMar5Container{
+        padding: 10% 2%;
+        gap: 7%;
+        justify-content: center;
+    }
+    .digi5heading2{
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+}

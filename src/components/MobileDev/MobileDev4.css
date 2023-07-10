@@ -40,3 +40,32 @@
     min-height: 22%;
     min-width: 40%;
 }
+
+@media screen and (max-width : 480px) {
+
+    .MobileDev4Container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Mobile4Image{
+        height: 35%;
+    }
+    .mob4Img{
+        height: 100%;
+    }
+    .Mobile4Content{
+        width: 100%;
+        gap: 0px;
+        height: 40%;
+    }
+    .Mobile4ContentTop{
+        font-size: 20px;
+        height: 40%;
+    }
+    .Mobile4List ul li{
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        margin-bottom: 10px !important;
+    }
+    
+}

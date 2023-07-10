@@ -14,7 +14,7 @@ const WebDev3 = () => {
   return (
     <>
         <div className="WebDev3Container">
-            <div style={{fontSize:60, fontWeight:600}}  >Our Technology Stack</div>
+            <div style={{fontSize:60, fontWeight:600}} className='web3heading1' >Our Technology Stack</div>
             <div className="stackTechWeb">
                 <div><img src={wordPressImage} alt="" /></div>
                 <div><img src={reactImage} alt="" /></div>

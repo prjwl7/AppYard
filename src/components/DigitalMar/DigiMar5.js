@@ -6,7 +6,7 @@ const DigiMar5 = () => {
     <>
         <div className="digiMar5Container">
             <div className="digi5heading1">Meta ADS</div>
-            <div className="digiMar5Image"><img src={digi5Image} alt="" /></div>
+            <div className="digiMar5Image"><img src={digi5Image} alt="" className='digi5Img' /></div>
             <div className="digi5heading2">Maximize your ROI and Generate More Leads and Sales with Meta ADS campaigns</div>
 
         </div>

@@ -136,3 +136,154 @@ button{
   font-size: 16px;
   color: white;
 }
+
+
+@media screen and (max-width: 480px) {
+  .HowWorks2Container {
+    background-size: 80%;
+    background-position-x: 50%;
+    height: 200%;
+    padding-left: 0%;
+    align-items: center;
+  }
+
+  *{
+    overflow-y: scroll;
+  }
+
+  .HowWorks-section1 {
+    top: 5%;
+    left: 20%;
+  }
+
+  .HowWorks-section2 {
+    grid-template-columns: 95%;
+    grid-template-rows: auto;
+    margin-top: 5%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-number {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    height: 18%;
+    gap: 0px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    background-color: #204E65;
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5,
+  .step6 {
+    height: 90%;
+    padding: 10%;
+  }
+
+  .works1,
+  .works2,
+  .works3,
+  .works4,
+  .works5,
+  .works6 {
+    width: 90%;
+    height: 90%;
+  }
+
+  .howWorks2Img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .section2And3 {
+    margin-top: 0%;
+    height: 30%;
+    width: 110%;
+    overflow: hidden;
+  }
+
+  .workingSection3 {
+    top: -45%;
+    flex-direction: column-reverse;
+    gap: 10%;
+    align-items: center;
+    left: -6%;
+  }
+
+  .howWorksSection2 {
+    top: 10%;
+    gap: 10%;
+    padding-left: 0;
+    height: 100%;
+  }
+
+  .howWorks2heading1{
+    font-size: 24px !important;
+  }
+
+  .stepHeadings1{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .stepHeadings2{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.2;
+  }
+  .step-content1,
+  .step-content2,
+  .step-content3,
+  .step-content4,
+  .step-content5,
+  .step-content6
+  {
+    gap: 5%;
+  }
+
+  .works2Company{
+    gap: 15px !important;
+    align-items: center !important;
+    width: 120%;
+    text-align: center;
+    position: absolute;
+    left: -38%;
+    height: 40%;
+  }
+
+  .works2Company button{
+    width: 150% !important;
+  }
+  .works2Services{
+    gap: 15px !important;
+    align-items: center !important;
+    width: 120%;
+    text-align: center;
+    position: absolute;
+    left: 8%;
+    height: 40%;;
+  }
+  .works2Contact{
+    gap: 15px !important;
+    width: 80% !important;
+    position: absolute;
+    left: 6%;
+    top: 40%;
+    align-items: center !important;
+  }
+
+  hr{
+    color: white !important;
+    width: 80% !important;
+  }
+}

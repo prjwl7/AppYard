@@ -7,7 +7,7 @@ const MobileDev2 = () => {
     <>
         <div className="MobileDev2Container">
             <div className="MobImage">
-              <img src={MobileImage} alt="" />
+              <img src={MobileImage} alt="" className='Mob2Img'/>
             </div>
             <div className='headingMobile'></div>
             <div className="headingMobileFront">

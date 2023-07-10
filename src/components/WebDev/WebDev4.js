@@ -8,7 +8,7 @@ const WebDev4 = () => {
     <>
         <div className="WebDev4Container">
             <div className="Web4Image">
-                <img src={bro} alt="" />
+                <img src={bro} alt="" className='Web4Img'/>
             </div>
             <div className="Web4Content">
                 <div className='Web4ContentTop'>Why are we high demand web development service ?</div>

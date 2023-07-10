@@ -59,3 +59,51 @@
     height: 100%;
     width: 20%;
 }
+
+
+@media screen and (max-width : 480px) {
+    .digi7heading1{
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        padding-left: 5%;
+        top: 0%;
+    }
+
+    .digi3Image{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .google7Img{
+        height: 100%;
+        width: 100%;
+    }
+    .digi7container{
+        padding: 10% 2%;
+        gap: 5%;
+        justify-content: center;
+    }
+    .digi7heading2{
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .digi7Content{
+        gap: 5%;
+        text-align: center;
+    }
+    .digi7Image{
+        height: 45%;
+        width: 90%;
+    }
+    .googleLines{
+        position: relative;
+        top: -5%;
+        height: 110%;
+    }
+}

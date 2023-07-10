@@ -39,3 +39,58 @@
     top: -16%;
     z-index: 1;
 }
+
+@media screen and (max-width : 480px) {
+
+    .digi4heading1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .digi4heading2{
+        font-size: 16px;
+        font-weight: 500;
+        width: 90%;
+        text-align: center;
+    }
+    .DigiMar4Container{
+        flex-direction: column;
+        gap: 0%;
+        padding: 10%;
+    }
+    .curvydigi1{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: -50%;
+        left: 20%;
+        transform: rotate(45deg);
+    }
+    .digi4Intersect1{
+        height: 100%;
+        width: 100%;
+    }
+    .curvydigi2{
+        position: absolute;
+        height: 90%;
+        width: 90%;
+        top: 40%;
+        transform: rotate(45deg);
+    }
+    .digi4Intersect2{
+        height: 100%;
+        height: 100%;
+    }
+    .digi4content{
+        width: 100%;
+        height: 85%;
+        position: relative;
+        top: 15%;
+        gap: 2%;
+    }
+    .digi4Image{
+        height: 40%;
+    }
+    .adwordsBig{
+        height: 100%;
+    }
+}

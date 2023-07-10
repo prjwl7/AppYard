@@ -64,3 +64,44 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (max-width : 480px) {
+
+
+    .Mob2Img{
+        height: 60%;
+    }
+
+    .headingMobile{
+        width: 90%;
+        height: 10%;
+        background-position-x: 110%;
+        background-position-y: 60%;
+        background-size: 90%;
+    }
+
+    .headingMobileFront{
+        width: 90%;
+        height: 10%;
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(2px);
+    }
+
+    .MobImage{
+        position: relative;
+        top: 17%;
+        left: 5%;
+    }
+
+    .logoShort{
+        position: absolute;
+        left: 60%;
+        top: 65%;
+    }
+    
+}

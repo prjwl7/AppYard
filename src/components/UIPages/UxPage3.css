@@ -1,0 +1,44 @@
+.uxPage3Container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 9.6%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9E6FFD;
+    color: white;
+    align-items: center;
+    padding: 3%;
+    gap: 3%;
+}
+
+.uxPage3heading1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.uxPage3heading2{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    width: 75%;
+}
+
+.uxPage3Image{
+    display: flex;
+    padding: 0% 0%;
+    align-items: center;
+    width: 100%;
+}
+
+.uxPage3Image1{
+    position: relative;
+}
+.uxPage3Image2{
+    z-index: 1;
+    width: 70%;
+}
+
+.uxPage3Image3 img{
+    transform: translateX(-20%);
+}

@@ -29,6 +29,7 @@
     position: absolute;
     top: 32%;  
     z-index: 1;
+    backdrop-filter: blur(2px);
 }
 
 .digiMar2Heading1{
@@ -40,11 +41,58 @@
     background: linear-gradient(0deg, rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0.3));
     position: absolute;
     top: 32%;
+    backdrop-filter: blur(2px);
 }
 
 .Digi2Logo{
     position: relative;
     left: 35%;
     bottom: 20%;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+
+@media screen and (max-width:480px) {
+    .mainImage2{
+        height: 50%;
+        width: 100%;
+        position: relative;
+        top: 20%;
+    }
+
+    .digi2LogoImg{
+        height: 100%;
+    }
+
+    .digiMar2Container{
+        padding: 0%;
+    }
+
+    .digiMar2Heading{
+        width: 90%;
+        height: 10%;
+        font-size: 24px;
+        font-weight: 600;
+    background-size: 95%;
+    background-position-y: 47%;
+    background-position-x: -100%;
+    top: 40%;
+    }
+    .digiMar2Heading1{
+        width: 90%;
+        height: 10%;
+        top: 40%;
+    }
+    .Digi2Logo{
+        position: relative;
+        left: 30%;
+        bottom: -15%;
+    
+    }
 }

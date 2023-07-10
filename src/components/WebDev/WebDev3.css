@@ -47,3 +47,44 @@
     height: 200px !important;
     width: 250px !important;
 }
+
+@media screen and (max-width : 480px) {
+
+    .web3heading1{
+        font-size: 24px !important;
+        font-weight: 500 !important;
+    }
+    
+      .stackTechWeb {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .stackTechWeb div {
+        height: 100px;
+        width: 20%;
+        padding: 1%;
+      }
+      .stackTechWeb div img{
+        height: 80%;
+        width: 75%;
+    }
+    .nodeImage{
+        height: 100% !important;
+    }
+    .shortLogoAppYard{
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 30px !important;
+        font-weight: 600;
+        gap: 10px;
+    }
+
+    .mob3logo{
+        height: 60%;
+    }
+}

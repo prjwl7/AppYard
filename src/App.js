@@ -26,10 +26,14 @@ import DigiMar4 from './components/DigitalMar/DigiMar4';
 import DigiMar5 from './components/DigitalMar/DigiMar5';
 import DigiMar6 from './components/DigitalMar/DigitalMar6';
 import DigiMar7 from './components/DigitalMar/DigiMar7';
+import DigiMar8 from './components/DigitalMar/DigiMar8';
+import UXPage1 from './components/UIPages/UXPage1';
+import UxPage2 from './components/UIPages/UxPage2';
+import UxPage3 from './components/UIPages/UxPage3';
+
 //Libraries
 import { BrowserRouter as Router, Routes, Route , HashRouter} from 'react-router-dom';
 import 'zone.js';
-import DigiMar8 from './components/DigitalMar/DigiMar8';
 
 
 function App() {
@@ -45,6 +49,7 @@ function App() {
          <Navbar></Navbar>
     <Routes>
       <Route path="/" element = {<ScrollBar components={components}/>} />
+      <Route path="/HowWorks2" element = {<HowWorks2/>} />
       <Route
         path="/scrollbarMobileDev" element = {<ScrollBar components={componentsMobileDev} />}
       />
@@ -64,7 +69,9 @@ function App() {
       <ScrollBar components={components}></ScrollBar>
       <DigiMar4></DigiMar4>
       <ScrollBar components={componentDigitalMarketing}></ScrollBar> */}
-     
+      {/* <Navbar></Navbar>
+      <DigiMar4></DigiMar4> */}
+    
      </>
   );
 }
