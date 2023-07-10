@@ -147,10 +147,6 @@ button{
     align-items: center;
   }
 
-  *{
-    overflow-y: scroll;
-  }
-
   .HowWorks-section1 {
     top: 5%;
     left: 20%;

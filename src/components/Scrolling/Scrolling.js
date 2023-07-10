@@ -1,68 +1,75 @@
-import React, { useState, useEffect, useRef, Component } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Scrolling.css';
-
-import FakeComponent from '../FakeComponent/FakeComponent';
 
 const ScrollBar = ({ components }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const scrollContainerRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const componentHeight = 300; // Adjust the height of each component as desired
+  const [showNextComponent, setShowNextComponent] = useState(false);
+  const [reverseScroll, setReverseScroll] = useState(false);
+  const fakeComponentRef = useRef(null);
+  const componentHeight = 1000; // Adjust the height of each component as desired
 
   useEffect(() => {
-    const handleScroll = (event) => {
-      const scrollContainer = scrollContainerRef.current;
-      if (scrollContainer) {
-        const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
-        const maxScrollTop = scrollHeight - clientHeight;
+    const handleScroll = () => {
+      const fakeComponent = fakeComponentRef.current;
+      if (fakeComponent) {
+        const { scrollTop, clientHeight, scrollHeight } = fakeComponent;
 
-        const isReverseScroll = event.deltaY < 0;
-        const isScrollAtTop = scrollTop === 0;
-        const isScrollAtBottom = scrollTop === maxScrollTop;
-
-        if (isReverseScroll && currentIndex === 0 && isScrollAtTop) {
-          // Prevent reverse scrolling on the first component
-          return;
-        } else if (!isReverseScroll && currentIndex === components.length - 1 && isScrollAtBottom) {
-          // Disable scrolling further on the last component
-          return;
-        } else if (isReverseScroll && isScrollAtTop) {
-          // Reset the scrollbar position to the bottom and update the component index
-          scrollContainer.scrollTop = maxScrollTop;
-          setCurrentIndex((prevIndex) => prevIndex - 1);
-        } else if (!isReverseScroll && isScrollAtBottom) {
-          // Reset the scrollbar position to the top and update the component index
-          scrollContainer.scrollTop = 0;
-          setCurrentIndex((prevIndex) => prevIndex + 1);
+        if (!reverseScroll && scrollTop + clientHeight >= scrollHeight) {
+          if (currentIndex < components.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+            setShowNextComponent(true);
+            fakeComponent.scrollTop = 0;
+          } else {
+            setReverseScroll(true);
+          }
+        } else if (reverseScroll && scrollTop === 0) {
+          if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+            setShowNextComponent(true);
+            fakeComponent.scrollTop = scrollHeight - clientHeight;
+          } else {
+            setReverseScroll(false);
+          }
         }
-
-        setScrollPosition(scrollTop);
       }
     };
 
-    const scrollContainer = scrollContainerRef.current;
-    if (scrollContainer) {
-      scrollContainer.addEventListener('wheel', handleScroll);
-      scrollContainer.addEventListener('scroll', handleScroll);
+    const fakeComponent = fakeComponentRef.current;
+    if (fakeComponent) {
+      fakeComponent.addEventListener('scroll', handleScroll);
       return () => {
-        scrollContainer.removeEventListener('wheel', handleScroll);
-        scrollContainer.removeEventListener('scroll', handleScroll);
+        fakeComponent.removeEventListener('scroll', handleScroll);
       };
     }
-  }, [components, currentIndex]);
+  }, [currentIndex, components, reverseScroll]);
 
   if (!components || components.length === 0) {
     return null;
   }
 
-  const totalScrollHeight = componentHeight * components.length ;
-
   return (
-    <div className="scroll-container" ref={scrollContainerRef}>
-      <div className="scroll-content" style={{ height: `${totalScrollHeight}px` }}>
+    <div className="scroll-container">
+      <div className="fakeComponent" ref={fakeComponentRef}>
+        <div className="insideFakeComponent">
+          {/* Add content inside the fakeComponent */}
+        </div>
+      </div>
+
+      <div className="scroll-content">
         {components.map((Component, index) => (
-          <div key={index} className={`component ${index === currentIndex ? 'active' : ''}`} style={{ height: `${componentHeight}px` }}>
-            {index === currentIndex && <Component />}
+          <div
+            key={index}
+            className={`component ${index === currentIndex ? 'active' : ''}`}
+            style={{
+              height: `${componentHeight}px`,
+              marginTop: `${componentHeight * index}px`,
+              opacity: showNextComponent && index === currentIndex ? 1 : 0,
+              transition: 'opacity 0.5s',
+            }}
+          >
+            <div className="content">
+              <Component />
+            </div>
           </div>
         ))}
       </div>

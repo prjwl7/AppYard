@@ -1,92 +1,74 @@
-/* Scroll container */
 .scroll-container {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;   
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  
-  /* Scroll content */
-  .scroll-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Individual component */
-  .component {
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  /* Active component */
-  .component.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  /* Custom scrollbar */
-/*  .scroll-container::-webkit-scrollbar {
-    width: 20px;
-    max-height: 70% !important;
-    height: 70% !important;
-  }
-  
-  .scroll-container::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-    max-height: 70% !important;
-    height: 70% !important;
-    width: 20px;
+  position: relative;
+  height: 100vh; /* Adjust the height as desired */
+  overflow: hidden;
+}
 
-  }
-  
-  .scroll-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-right: none;
-    border-left: none;
-  }
-  
-  .scroll-container::-webkit-scrollbar-track-piece :start {
-    background: transparent;
-    margin-top: 100px;
-  }
-  
-  .scroll-container::-webkit-scrollbar-track-piece :end {
-    background: transparent;
-    margin-bottom: 100px;
-  }*/
+.fakeComponent {
+  height: 500px; /* Adjust the height as desired */
+  overflow-y: scroll;
+  position: absolute;
+  width: 95%;
+  background: transparent;
+  top: 33%;
+  left: 0%;
+  z-index: 2;
+}
 
-  ::-webkit-scrollbar {
-    display: block;
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #FFF;
-   height: 40vh;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #000;
-    border-right: none;
-    border-left: none;
-    border-radius: 10px;
-    height: 10px;
-  }
+.insideFakeComponent {
+  height: 1500px; /* Adjust the height as desired */
+  /* Add any additional styles for the content inside the fakeComponent */
+}
 
-  ::-webkit-scrollbar-thumb:hover{
-    background-color: red;
-  }
-  
-  ::-webkit-scrollbar-track-piece:end {
-    background: transparent;
-    margin-bottom: 20vh;
-  }
-  
-  ::-webkit-scrollbar-track-piece:start {
-    background: transparent;
-    margin-top: 20vh;
-  }
+.scroll-content {
+  position: relative;
+  height: 100%;
+  overflow-y: hidden;
+  opacity: 1;
+}
+
+.component {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.component.active {
+  opacity: 0;
+}
+
+.component:not(.active) {
+  opacity: 0;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add any additional styles for your components */
+::-webkit-scrollbar {
+  display: block;
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+ height: 50vh;
+ border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-right: none;
+  border-left: none;
+  border-radius: 10px;
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: red;
+}
