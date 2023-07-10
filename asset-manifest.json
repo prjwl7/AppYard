@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AppYard/static/css/main.743f1991.css",
-    "main.js": "/AppYard/static/js/main.0af917b0.js",
+    "main.css": "/AppYard/static/css/main.937a6295.css",
+    "main.js": "/AppYard/static/js/main.f9724759.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
     "static/media/rocket (1).png": "/AppYard/static/media/rocket (1).6fd9e3d9673fe03aeb54.png",
     "static/media/man-website.png": "/AppYard/static/media/man-website.10afed9469c7838e4c19.png",
@@ -55,12 +55,12 @@
     "static/media/Intersect (1).png": "/AppYard/static/media/Intersect (1).51902ec6f06579d81caf.png",
     "index.html": "/AppYard/index.html",
     "static/media/icons8-menu.svg": "/AppYard/static/media/icons8-menu.d21ce5ca420021645d20.svg",
-    "main.743f1991.css.map": "/AppYard/static/css/main.743f1991.css.map",
-    "main.0af917b0.js.map": "/AppYard/static/js/main.0af917b0.js.map",
+    "main.937a6295.css.map": "/AppYard/static/css/main.937a6295.css.map",
+    "main.f9724759.js.map": "/AppYard/static/js/main.f9724759.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.743f1991.css",
-    "static/js/main.0af917b0.js"
+    "static/css/main.937a6295.css",
+    "static/js/main.f9724759.js"
   ]
 }
