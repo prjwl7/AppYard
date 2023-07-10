@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/AppYard/static/css/main.93a5604e.css",
-    "main.js": "/AppYard/static/js/main.279924d7.js",
+    "main.css": "/AppYard/static/css/main.743f1991.css",
+    "main.js": "/AppYard/static/js/main.0af917b0.js",
     "static/js/787.122c01b9.chunk.js": "/AppYard/static/js/787.122c01b9.chunk.js",
     "static/media/rocket (1).png": "/AppYard/static/media/rocket (1).6fd9e3d9673fe03aeb54.png",
     "static/media/man-website.png": "/AppYard/static/media/man-website.10afed9469c7838e4c19.png",
+    "static/media/lebrons 1.png": "/AppYard/static/media/lebrons 1.c2fbfa01f28aeeea3e06.png",
     "static/media/digimar.png": "/AppYard/static/media/digimar.642bc8f6212e4a1f421a.png",
+    "static/media/text program on computer screen.png": "/AppYard/static/media/text program on computer screen.f7853a22dea273fb775c.png",
     "static/media/MobileImage.png": "/AppYard/static/media/MobileImage.87f7baa817f923d55568.png",
+    "static/media/KTM 1.png": "/AppYard/static/media/KTM 1.a4310f2d97e2d8affe6b.png",
     "static/media/rocket.png": "/AppYard/static/media/rocket.3de7ae5d3678038a95a3.png",
     "static/media/bro.png": "/AppYard/static/media/bro.5e814b5da56a51daa2ef.png",
+    "static/media/uxpage2image.png": "/AppYard/static/media/uxpage2image.f3e084ac1c3e4641f724.png",
     "static/media/seo 1.png": "/AppYard/static/media/seo 1.cf32457e2f056f7efa8e.png",
     "static/media/search (4) 1.png": "/AppYard/static/media/search (4) 1.9dc6007051fce01c449b.png",
     "static/media/adwords 1.png": "/AppYard/static/media/adwords 1.afdbbedfa40c1868a96a.png",
     "static/media/Wad of money.png": "/AppYard/static/media/Wad of money.688622a0a9fd70621bfb.png",
     "static/media/works4.png": "/AppYard/static/media/works4.04ff7982e58ae6c22f74.png",
     "static/media/works0.png": "/AppYard/static/media/works0.0cbf7eefd8f0fbc996a7.png",
+    "static/media/AI - light mode 1.png": "/AppYard/static/media/AI - light mode 1.98ae16945ca15b3c9e4b.png",
     "static/media/linkedin 1.png": "/AppYard/static/media/linkedin 1.8ea57227a5606953c41c.png",
     "static/media/cryptocurrency market growth.png": "/AppYard/static/media/cryptocurrency market growth.a7419540c2717bdc5d87.png",
     "static/media/amico.png": "/AppYard/static/media/amico.d6d6b7f697e8da99929c.png",
@@ -50,12 +55,12 @@
     "static/media/Intersect (1).png": "/AppYard/static/media/Intersect (1).51902ec6f06579d81caf.png",
     "index.html": "/AppYard/index.html",
     "static/media/icons8-menu.svg": "/AppYard/static/media/icons8-menu.d21ce5ca420021645d20.svg",
-    "main.93a5604e.css.map": "/AppYard/static/css/main.93a5604e.css.map",
-    "main.279924d7.js.map": "/AppYard/static/js/main.279924d7.js.map",
+    "main.743f1991.css.map": "/AppYard/static/css/main.743f1991.css.map",
+    "main.0af917b0.js.map": "/AppYard/static/js/main.0af917b0.js.map",
     "787.122c01b9.chunk.js.map": "/AppYard/static/js/787.122c01b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93a5604e.css",
-    "static/js/main.279924d7.js"
+    "static/css/main.743f1991.css",
+    "static/js/main.0af917b0.js"
   ]
 }
