@@ -6,7 +6,7 @@ import seo from '../assests/seo 2.png'
 import DigiImage from '../assests/digimar.png'
 import { useNavigate } from 'react-router-dom'
 const DigitalMar = () => {
-    const navigate = useNavigate();
+     const navigate = useNavigate();
 
     const handleButtonClick = () => {
         navigate('/scrollbarDigitalMarketing');

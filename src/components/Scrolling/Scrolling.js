@@ -3,8 +3,8 @@ import './Scrolling.css';
 
 const ScrollBar = ({ components }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showNextComponent, setShowNextComponent] = useState(false);
   const [reverseScroll, setReverseScroll] = useState(false);
+  const [forwardScroll, setForwardScroll] = useState(false);
   const fakeComponentRef = useRef(null);
   const componentHeight = 1000; // Adjust the height of each component as desired
 
@@ -17,7 +17,6 @@ const ScrollBar = ({ components }) => {
         if (!reverseScroll && scrollTop + clientHeight >= scrollHeight) {
           if (currentIndex < components.length - 1) {
             setCurrentIndex(currentIndex + 1);
-            setShowNextComponent(true);
             fakeComponent.scrollTop = 0;
           } else {
             setReverseScroll(true);
@@ -25,10 +24,21 @@ const ScrollBar = ({ components }) => {
         } else if (reverseScroll && scrollTop === 0) {
           if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1);
-            setShowNextComponent(true);
             fakeComponent.scrollTop = scrollHeight - clientHeight;
           } else {
             setReverseScroll(false);
+          }
+        } else if (!forwardScroll && scrollTop === 0) {
+          if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+            setForwardScroll(true);
+            fakeComponent.scrollTop = scrollHeight - clientHeight;
+          }
+        } else if (forwardScroll && scrollTop + clientHeight >= scrollHeight) {
+          if (currentIndex < components.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+            setForwardScroll(false);
+            fakeComponent.scrollTop = 0;
           }
         }
       }
@@ -41,7 +51,7 @@ const ScrollBar = ({ components }) => {
         fakeComponent.removeEventListener('scroll', handleScroll);
       };
     }
-  }, [currentIndex, components, reverseScroll]);
+  }, [currentIndex, components, reverseScroll, forwardScroll]);
 
   if (!components || components.length === 0) {
     return null;
@@ -63,7 +73,7 @@ const ScrollBar = ({ components }) => {
             style={{
               height: `${componentHeight}px`,
               marginTop: `${componentHeight * index}px`,
-              opacity: showNextComponent && index === currentIndex ? 1 : 0,
+              opacity: index === currentIndex ? 1 : 0,
               transition: 'opacity 0.5s',
             }}
           >

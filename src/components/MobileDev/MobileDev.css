@@ -63,7 +63,7 @@
     margin-left: 1%;
   }
 
-  .mobile-knowMore{
+  .mobile-knowMore1{
     background-color:#65B0D6;
     color: white;
     border-radius: 10px;
@@ -145,7 +145,7 @@
 
   .mobile-content {
     position: absolute;
-    height: 45vh;
+    height: 50vh;
     width: 90vw;
     padding: 2%;
     top: 40%;
@@ -198,7 +198,7 @@
 
    .div-star4{
     position: absolute;
-    top: 78%;
+    top: 83%;
     left: 60%;
   }
 
@@ -211,5 +211,9 @@
       width: 100%;
     }
 
+    .mobile-knowMore1{
+      position: relative;
+      top: 20%;
+    }
 }
   

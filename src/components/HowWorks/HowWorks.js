@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const HowWorks = () => {
   const navigate = useNavigate();
   const handleButtonClick = () => {
-    navigate('/HowWorks2');
+     navigate('/HowWorks2');
     console.log('Working');
   };
   return (

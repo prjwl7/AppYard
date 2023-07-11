@@ -1,7 +1,10 @@
+
+
 .scroll-container {
   position: relative;
   height: 100vh; /* Adjust the height as desired */
   overflow: hidden;
+  width: 100vw;
 }
 
 .fakeComponent {
@@ -34,12 +37,9 @@
 }
 
 .component.active {
-  opacity: 0;
+  opacity: 1;
 }
 
-.component:not(.active) {
-  opacity: 0;
-}
 
 .content {
   height: 100%;
@@ -87,5 +87,13 @@
   left: 0%;
   z-index: 2;
 }
+.scroll-container {
+  position: sticky;
+  height: 100vh; /* Adjust the height as desired */
+  overflow: hidden;
+  width: 100vw;
+}
+
+
 
 }

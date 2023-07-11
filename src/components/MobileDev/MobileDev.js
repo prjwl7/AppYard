@@ -12,7 +12,7 @@ import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 import HowWorks from '../HowWorks/HowWorks'
 import GetInTouch from '../GetInTouch/GetInTouch'
 const MobileDev = () => {
-     const navigate = useNavigate();
+    const navigate = useNavigate();
     const components = [MobileDev, WebDev, DigitalMar, Helps, WhyChooseUs, HowWorks, GetInTouch];
     const handleButtonClick = () => {
          navigate('/scrollbarMobileDev');
@@ -34,7 +34,7 @@ const MobileDev = () => {
                     </ul>
                 </div>
                 <div>
-                    <button className='mobile-knowMore' onClick={handleButtonClick}>Know more</button>
+                    <button className='mobile-knowMore1' onClick={handleButtonClick}>Know more</button>
                 </div>
             </div>
             <div className='div-star1'><img src={android} alt=""  className='star1'/></div>

@@ -67,6 +67,8 @@ function App() {
       <MobileDev></MobileDev> */}
       {/* <Navbar></Navbar>
       <DigiMar4></DigiMar4> */}
+      {/* <Navbar></Navbar>
+      <ScrollBar components={components} ></ScrollBar> */}
     
      </>
   );
